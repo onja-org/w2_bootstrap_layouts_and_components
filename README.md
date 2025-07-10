@@ -21,7 +21,13 @@ By completing this lab, you will:
 
 ### Setup
 1. Clone or download this repository
+    ```bash
+    git clone ...
+    ```
 2. Navigate to the project directory
+    ```bash
+    cd w2_bootstrap_layouts_and_components
+    ```
 3. Install dependencies:
    ```bash
    npm install
