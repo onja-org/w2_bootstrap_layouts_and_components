@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-layouts-components-lab",
+  "version": "1.0.0",
+  "description": "A hands-on lab for learning Bootstrap layouts and components",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha test/**/*.test.js",
+    "test:watch": "mocha test/**/*.test.js --watch",
+    "serve": "npx http-server -p 3000 -o"
+  },
+  "keywords": [
+    "bootstrap",
+    "html",
+    "css",
+    "frontend",
+    "learning",
+    "lab"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "jsdom": "^22.1.0",
+    "mocha": "^10.2.0",
+    "http-server": "^14.1.1"
+  }
+}
