@@ -45,7 +45,9 @@
         </nav>
         -->
 
-        <div style="display: flex; border-bottom: 1px solid black; padding: 20px;">
+        <div
+            style="display: flex; border-bottom: 1px solid black; padding: 20px"
+        >
             <div style="text-align: left; flex-grow: 1">Community Hub</div>
             <div style="display: flex">
                 <div style="margin-right: 14px">Home</div>
@@ -175,7 +177,7 @@
           </div>
         </section>
         -->
-        <section style="margin-top: 5vh">
+        <section style="margin: 30px 50px">
             <div style="width: 100%; text-align: center">
                 <h2>Why Our Community Matters</h2>
                 <p>
@@ -307,13 +309,13 @@
           </div>
         </section>
         -->
-        <section style="margin-top: 5vh">
+        <section style="margin-top: 5vh; margin: 30px 50px; border-top: 2px">
             <div style="width: 100%; text-align: center">
                 <h2>Ways to Get Involved</h2>
                 <p>
                     Choose how you'd like to make a difference in our community
                 </p>
-                <div style="display: flex; text-align: left;">
+                <div style="display: flex; text-align: left">
                     <div>
                         <h4>Volunteer Opportunities</h4>
                         <p>
@@ -321,27 +323,91 @@
                             From community cleanup events to mentoring programs,
                             find your perfect way to give back.
                         </p>
-                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Flexible Schedule</span>
-                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>All Skills Welcome</span>
-                        <div style="margin-top: 10px;"><button>Get Started</button></div>
+                        <span
+                            style="
+                                border: 1px solid gray;
+                                font-color: gray;
+                                padding: 5px;
+                                margin: 5px;
+                                font-size: 12px;
+                            "
+                            >Flexible Schedule</span
+                        >
+                        <span
+                            style="
+                                border: 1px solid gray;
+                                font-color: gray;
+                                padding: 5px;
+                                margin: 5px;
+                                font-size: 12px;
+                            "
+                            >All Skills Welcome</span
+                        >
+                        <div style="margin-top: 10px">
+                            <button>Get Started</button>
+                        </div>
                     </div>
                     <div>
                         <h4>Support Network</h4>
                         <p>
-                            No one should face challenges alone. Our community provides support, resources, and connections when you need them most.
+                            No one should face challenges alone. Our community
+                            provides support, resources, and connections when
+                            you need them most.
                         </p>
-                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Monthly Events</span>
-                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Free to Attend</span>
-                        <div style="margin-top: 10px;"><button>View Schedule</button></div>
+                        <span
+                            style="
+                                border: 1px solid gray;
+                                font-color: gray;
+                                padding: 5px;
+                                margin: 5px;
+                                font-size: 12px;
+                            "
+                            >Monthly Events</span
+                        >
+                        <span
+                            style="
+                                border: 1px solid gray;
+                                font-color: gray;
+                                padding: 5px;
+                                margin: 5px;
+                                font-size: 12px;
+                            "
+                            >Free to Attend</span
+                        >
+                        <div style="margin-top: 10px">
+                            <button>View Schedule</button>
+                        </div>
                     </div>
                     <div>
                         <h4>Learning Together</h4>
                         <p>
-                            Expand your skills through community learning programs. From technology workshops to life skills sessions, we learn and grow together.
+                            Expand your skills through community learning
+                            programs. From technology workshops to life skills
+                            sessions, we learn and grow together.
                         </p>
-                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>All Levels</span>
-                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Peer Support</span>
-                        <div style="margin-top: 10px;"><button>Explore Courses</button></div>
+                        <span
+                            style="
+                                border: 1px solid gray;
+                                font-color: gray;
+                                padding: 5px;
+                                margin: 5px;
+                                font-size: 12px;
+                            "
+                            >All Levels</span
+                        >
+                        <span
+                            style="
+                                border: 1px solid gray;
+                                font-color: gray;
+                                padding: 5px;
+                                margin: 5px;
+                                font-size: 12px;
+                            "
+                            >Peer Support</span
+                        >
+                        <div style="margin-top: 10px">
+                            <button>Explore Courses</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -361,9 +427,154 @@
         - form-check-input = styles checkbox inputs (follow the pattern)
         - btn-primary = blue button (you used this in Exercise 4)
 
-        Copy this code and fill in the blanks:
-        See README.md Exercise 5 for the complete form code with blanks to fill in.
+        Replace the code below and then and fill in the blanks with the right classes:
+        ```html
+        <section class="py-5" id="contact">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="text-center mb-5">
+                  <h2 class="display-6 fw-bold mb-3">Get in Touch</h2>
+                  <p class="lead ****-muted">
+                    We'd love to hear from you! Send us a message and we'll get back to you soon.
+                  </p>
+                </div>
+                <div class="card border-0 shadow">
+                  <div class="card-body p-4">
+                    <form>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <label for="firstName" class="****-label">First Name</label>
+                          <input type="text" class="****-control" id="firstName" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" required>
+                        </div>
+
+                        <div class="col-12">
+                          <label for="email" class="form-label">Email Address</label>
+                          <input type="email" class="****-control" id="email" required>
+                        </div>
+
+                        <div class="col-12">
+                          <label for="subject" class="form-label">How did you hear about us?</label>
+                          <select class="****-select" id="subject" required>
+                            <option value="">Choose...</option>
+                            <option value="friend">Friend or family member</option>
+                            <option value="social">Social media</option>
+                            <option value="search">Search engine</option>
+                            <option value="event">Community event</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+
+                        <div class="col-12">
+                          <label for="message" class="form-label">Your Message</label>
+                          <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Tell us what's on your mind..." required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="****-check">
+                            <input class="****-check-input" type="checkbox" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                              I'd like to receive community updates and newsletter
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-12 text-center pt-3">
+                          <button type="submit" class="btn ****-primary btn-lg px-5">
+                            Send Message
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         -->
+        <section style="margin-top: 10vh">
+            <div
+                style="
+                    text-align: center;
+                    padding: 10px;
+                    margin-left: 5vw;
+                    margin-right: 5vw;
+                    border: 1px solid gray;
+                    box-shadow: 5px black;
+                "
+            >
+                <h2>Get In Touch</h2>
+                <p>
+                    We'd love to hear from you! Send us a message and we'll get
+                    back to you soon.
+                </p>
+                <div style="text-align: left">
+                    <div style="display: flex">
+                        <div style="flex-grow: 1">
+                            <label style="width: 100%">
+                                First Name
+                                <div><input style="width: 100%" /></div>
+                            </label>
+                        </div>
+                        <div style="flex-grow: 1">
+                            <label style="width: 100%">
+                                Last Name
+                                <div><input style="width: 100%" /></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div style="width: 100%">
+                        <label style="width: 100%">
+                            Email Address
+                            <div><input style="width: 100%" /></div>
+                        </label>
+                    </div>
+                    <div style="width: 100%">
+                        <label style="width: 100%">
+                            How did you hear about us?
+                            <div>
+                                <select style="width: 100%">
+                                    <option value="" selected>Choose...</option>
+                                    <option value="friend">
+                                        Friend or family member
+                                    </option>
+                                    <option value="social">Social media</option>
+                                    <option value="search">
+                                        Search engine
+                                    </option>
+                                    <option value="event">
+                                        Community event
+                                    </option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div style="width: 100%">
+                        <label style="width: 100%">
+                            Your Message
+                            <div><textarea style="width: 100%"></textarea></div>
+                        </label>
+                    </div>
+
+                    <div style="width: 100%">
+                        <label>
+                            <input type="checkbox" />
+                            I'd like to receive community updates and newsletter
+                        </label>
+                    </div>
+                </div>
+                <br />
+                <button>Send Message</button>
+            </div>
+        </section>
 
         <!-- Exercise 6: Buttons and Components -->
         <!--
@@ -378,7 +589,82 @@
         - progress = creates the progress bar container
 
         Copy this code and fill in the blanks:
-        See README.md Exercise 6 for the complete components code with blanks to fill in.
+
+        <section class="bg-light py-5" id="take-action">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-12 text-center">
+                <h2 class="display-6 fw-bold mb-3">Take Action Today</h2>
+                <p class="lead text-muted">
+                  Ready to get involved? Choose how you'd like to make a difference.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+              <div class="col-12 text-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn ****-primary btn-lg">Join Community</button>
+                  <button type="button" class="btn ****-success btn-lg">Start Volunteering</button>
+                  <button type="button" class="btn ****-info btn-lg">Learn More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-5">
+              <div class="col-md-3">
+                <button class="btn ****-outline-primary w-100">Primary Action</button>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-outline-secondary w-100">Secondary</button>
+              </div>
+              <div class="col-md-3">
+                <button class="btn ****-outline-warning w-100">Warning</button>
+              </div>
+              <div class="col-md-3">
+                <button class="btn btn-outline-danger w-100">Important</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="fw-bold mb-3">Community Goals Progress</h5>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>New Members This Month</span>
+                    <span class="badge ****-primary">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="****-bar bg-primary" role="progressbar"
+                         style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between mb-1">
+                    <span>Volunteer Hours Goal</span>
+                    <span class="badge bg-success">92%</span>
+                  </div>
+                  <div class="****">
+                    <div class="progress-bar ****-success" role="progressbar"
+                         style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h5 class="fw-bold mb-3">Community Stats</h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="****-bg-primary fs-6 p-2">1,247 Active Members</span>
+                  <span class="badge ****-success fs-6 p-2">3,580 Volunteer Hours</span>
+                  <span class="badge bg-warning fs-6 p-2">156 Events This Year</span>
+                  <span class="badge ****-info fs-6 p-2">89% Satisfaction Rate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         -->
 
         <!-- Exercise 7: Alerts and Messages -->
@@ -395,7 +681,67 @@
         - alert-warning = yellow alert (you know this pattern!)
 
         Copy this code and fill in the blanks:
-        See README.md Exercise 7 for the complete alerts code with blanks to fill in.
+
+        <section class="py-5" id="alerts">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-12 text-center">
+                <h2 class="display-6 fw-bold mb-3">Community Updates</h2>
+                <p class="lead text-muted">
+                  Stay informed with the latest news and important information.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+
+                <div class="alert ****-primary alert-dismissible fade show" role="alert">
+                  <h4 class="****-heading">Welcome to Our Community! 🎉</h4>
+                  <p class="mb-0">
+                    Thank you for joining us in building a stronger, more connected community.
+                    Your participation makes a real difference in the lives of others.
+                  </p>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+
+                <div class="alert ****-success alert-dismissible fade show" role="alert">
+                  <h4 class="alert-heading">Community Garden Success! 🌱</h4>
+                  <p>
+                    Thanks to our amazing volunteers, we've successfully completed our community garden project.
+                    Over 50 families now have access to fresh, locally-grown produce.
+                  </p>
+                  <hr>
+                  <p class="mb-0">
+                    <strong>Impact:</strong> 500+ pounds of fresh vegetables donated to local food banks.
+                  </p>
+                  <button type="button" class="****-close" data-bs-dismiss="alert"></button>
+                </div>
+
+                <div class="alert alert-info ****-dismissible fade show" role="alert">
+                  <h4 class="alert-heading">Upcoming Events 📅</h4>
+                  <p class="mb-2">Don't miss these exciting community events this month:</p>
+                  <ul class="mb-0">
+                    <li><strong>March 15:</strong> Community Cleanup Day - Central Park</li>
+                    <li><strong>March 22:</strong> Skills Workshop - Digital Literacy</li>
+                    <li><strong>March 29:</strong> Community Potluck & Celebration</li>
+                  </ul>
+                  <button type="button" class="btn-close" data-bs-dismiss="****"></button>
+                </div>
+
+                <div class="alert ****-warning" role="alert">
+                  <h4 class="alert-heading">Important Notice ⚠️</h4>
+                  <p class="mb-0">
+                    Our community center will be closed for maintenance on March 10-12.
+                    All scheduled activities will be moved to alternative locations.
+                    Contact us at <strong>info@communityhub.org</strong> for details.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
         -->
 
         <!-- Exercise 8: Footer -->
@@ -413,7 +759,78 @@
         - mb-2, mb-3 = margin bottom (you know this pattern!)
 
         Copy this code and fill in the blanks:
-        See README.md Exercise 8 for the complete footer code with blanks to fill in.
+
+        <footer class="****-dark ****-light py-5 mt-5" id="footer">
+          <div class="container">
+            <div class="row g-4">
+
+              <div class="****-lg-4">
+                <h5 class="fw-bold mb-3">Community Hub</h5>
+                <p class="mb-3">
+                  Building bridges of connection, kindness, and support in our evolving world.
+                  Together, we create positive change one relationship at a time.
+                </p>
+                <div class="d-flex gap-3">
+                  <a href="#" class="text-light">Facebook</a>
+                  <a href="#" class="****-light">Twitter</a>
+                  <a href="#" class="text-light">Instagram</a>
+                </div>
+              </div>
+
+              <div class="col-lg-2 ****-md-4">
+                <h6 class="fw-bold mb-3">Quick Links</h6>
+                <ul class="****-unstyled">
+                  <li class="mb-2"><a href="#home" class="text-light ****-decoration-none">Home</a></li>
+                  <li class="mb-2"><a href="#about" class="text-light text-decoration-none">About</a></li>
+                  <li class="mb-2"><a href="#connect" class="****-light text-decoration-none">Get Involved</a></li>
+                  <li class="mb-2"><a href="#contact" class="text-light ****-decoration-none">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-2 col-md-4">
+                <h6 class="****-bold mb-3">Programs</h6>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="#" class="text-light text-decoration-none">Volunteering</a></li>
+                  <li class="****-2"><a href="#" class="text-light text-decoration-none">Events</a></li>
+                  <li class="mb-2"><a href="#" class="text-light text-decoration-none">Learning</a></li>
+                  <li class="mb-2"><a href="#" class="text-light text-decoration-none">Support</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-4">
+                <h6 class="fw-bold ****-3">Contact Us</h6>
+                <div class="mb-2">
+                  <strong>Address:</strong><br>
+                  123 Community Street<br>
+                  Kindness City, KC 12345
+                </div>
+                <div class="mb-2">
+                  <strong>Phone:</strong> (555) 123-4567
+                </div>
+                <div class="****-2">
+                  <strong>Email:</strong> hello@communityhub.org
+                </div>
+                <div>
+                  <strong>Hours:</strong><br>
+                  Mon-Fri: 9AM-6PM<br>
+                  Sat-Sun: 10AM-4PM
+                </div>
+              </div>
+
+            </div>
+
+            <hr class="my-4">
+            <div class="row">
+              <div class="****-md-6">
+                <p class="mb-0">&copy; 2024 Community Hub. Made with ❤️ for our community.</p>
+              </div>
+              <div class="col-md-6 ****-md-end">
+                <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-light ****-decoration-none">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </footer>
         -->
 
         <script

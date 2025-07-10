@@ -196,6 +196,12 @@ describe("Bootstrap Layouts and Components Lab", function () {
       expect(analysis.hasFormControls).to.be.true;
       expect(analysis.hasButtons).to.be.true;
     });
+
+    it("should have all placeholder classes replaced", function () {
+      const formSection = document.querySelector("#contact");
+      const placeholderClasses = formSection.querySelectorAll('[class*="****]');
+      expect(placeholderClasses.length).to.be.equal(0);
+    });
   });
 
   describe("Exercise 6: Buttons and Components", function () {
@@ -219,13 +225,17 @@ describe("Bootstrap Layouts and Components Lab", function () {
     it("should include interactive components (badges, progress bars, etc.)", function () {
       const badges = document.querySelectorAll(".badge");
       const progressBars = document.querySelectorAll(".progress");
-      const spinners = document.querySelectorAll(
-        ".spinner-border, .spinner-grow",
-      );
 
       expect(
         badges.length + progressBars.length + spinners.length,
-      ).to.be.at.least(1);
+      ).to.be.at.least(2);
+    });
+
+    it("should have all placeholder classes replaced", function () {
+      const takeActionSection = document.querySelector("#take-action");
+      const placeholderClasses =
+        takeActionSection.querySelectorAll('[class*="****]');
+      expect(placeholderClasses.length).to.be.equal(0);
     });
   });
 
@@ -245,6 +255,12 @@ describe("Bootstrap Layouts and Components Lab", function () {
         ".alert-primary, .alert-secondary, .alert-success, .alert-warning, .alert-danger, .alert-info",
       );
       expect(alertTypes.length).to.be.at.least(1);
+    });
+    it("should have all placeholder classes replaced", function () {
+      const alertsSection = document.querySelector("#alerts");
+      const placeholderClasses =
+        alertsSection.querySelectorAll('[class*="****]');
+      expect(placeholderClasses.length).to.be.equal(0);
     });
   });
 
@@ -272,6 +288,13 @@ describe("Bootstrap Layouts and Components Lab", function () {
       } else {
         fail("Footer element not found");
       }
+    });
+
+    it("should have all placeholder classes replaced", function () {
+      const footerSection = document.querySelector("#footer");
+      const placeholderClasses =
+        footerSection.querySelectorAll('[class*="****]');
+      expect(placeholderClasses.length).to.be.equal(0);
     });
   });
 });
