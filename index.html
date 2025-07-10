@@ -17,7 +17,7 @@
         <!--
         🎯 GUIDED LEARNING: This is your first Bootstrap component!
 
-        Copy this complete navbar code to learn the structure:
+        Replace the navbar code below to see how bootstrap makes things much more beautiful:
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
@@ -44,6 +44,16 @@
           </div>
         </nav>
         -->
+
+        <div style="display: flex; border-bottom: 1px solid black; padding: 20px;">
+            <div style="text-align: left; flex-grow: 1">Community Hub</div>
+            <div style="display: flex">
+                <div style="margin-right: 14px">Home</div>
+                <div style="margin-right: 14px">About</div>
+                <div style="margin-right: 14px">Connect</div>
+                <div>Contact</div>
+            </div>
+        </div>
 
         <!-- Exercise 2: Hero Section -->
         <!--
@@ -73,15 +83,30 @@
           </div>
         </section>
         -->
-        <div class="container-fluid bg-light py-5">
-            <div class="container text-center">
-                <h1 class="display-4">Welcome to Our Community</h1>
-                <p class="lead">
+        <section style="margin-top: 5vh">
+            <div style="width: 100%; text-align: center">
+                <h1>Welcome to Our Community</h1>
+                <p>
                     Building connections, spreading kindness, creating
                     togetherness in our evolving world.
                 </p>
+                <div
+                    style="
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        margin: auto;
+                    "
+                >
+                    <div>
+                        <button>Join Our Community</button>
+                    </div>
+                    <div>
+                        <button>Learn More</button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- Exercise 3: Main Content Grid -->
         <!--
@@ -150,14 +175,50 @@
           </div>
         </section>
         -->
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Community Features</h2>
-                    <p>Explore the ways our community comes together:</p>
+        <section style="margin-top: 5vh">
+            <div style="width: 100%; text-align: center">
+                <h2>Why Our Community Matters</h2>
+                <p>
+                    Discover the values that make our community strong and
+                    welcoming.
+                </p>
+                <div style="display: flex">
+                    <div>
+                        <div>
+                            <span class="text-white fs-2">❤️</span>
+                        </div>
+                        <h4>Kindness First</h4>
+                        <p>
+                            We believe that small acts of kindness create ripple
+                            effects that transform communities and change lives
+                            for the better.
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <span>🤝</span>
+                        </div>
+                        <h4>Support Network</h4>
+                        <p>
+                            No one should face challenges alone. Our community
+                            provides support, resources, and connections when
+                            you need them most.
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <span>🌱</span>
+                        </div>
+                        <h4>Growth Together</h4>
+                        <p>
+                            Learning and growing together makes us all stronger.
+                            We celebrate every milestone and support each
+                            person's journey.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Exercise 4: Cards Section -->
         <!--
@@ -246,6 +307,45 @@
           </div>
         </section>
         -->
+        <section style="margin-top: 5vh">
+            <div style="width: 100%; text-align: center">
+                <h2>Ways to Get Involved</h2>
+                <p>
+                    Choose how you'd like to make a difference in our community
+                </p>
+                <div style="display: flex; text-align: left;">
+                    <div>
+                        <h4>Volunteer Opportunities</h4>
+                        <p>
+                            Make a direct impact through our volunteer programs.
+                            From community cleanup events to mentoring programs,
+                            find your perfect way to give back.
+                        </p>
+                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Flexible Schedule</span>
+                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>All Skills Welcome</span>
+                        <div style="margin-top: 10px;"><button>Get Started</button></div>
+                    </div>
+                    <div>
+                        <h4>Support Network</h4>
+                        <p>
+                            No one should face challenges alone. Our community provides support, resources, and connections when you need them most.
+                        </p>
+                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Monthly Events</span>
+                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Free to Attend</span>
+                        <div style="margin-top: 10px;"><button>View Schedule</button></div>
+                    </div>
+                    <div>
+                        <h4>Learning Together</h4>
+                        <p>
+                            Expand your skills through community learning programs. From technology workshops to life skills sessions, we learn and grow together.
+                        </p>
+                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>All Levels</span>
+                        <span style="border: 1px solid gray; font-color: gray; padding: 5px; margin: 5px; font-size: 12px;"/>Peer Support</span>
+                        <div style="margin-top: 10px;"><button>Explore Courses</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Exercise 5: Forms -->
         <!--

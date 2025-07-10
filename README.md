@@ -2,7 +2,13 @@
 
 Welcome to the Community Connection Hub! In this hands-on lab, you'll learn Bootstrap 5 by building a website step-by-step. We'll provide you with detailed guidance and some fun discovery challenges to help you learn Bootstrap patterns.
 
+## 👢 What is Bootstrap?
+
+Bootstrap provides ready-made CSS classes which help you create a consistent user interface across different devices and screen sizes without having to write custom CSS.
+
 ## 🎯 Learning Objectives
+
+We are going to take a basic HTML webpage and transform it into a fully responsive, mobile-first web application using Bootstrap. You will learn how to use Bootstrap's grid system, components, and utilities to create a visually appealing and functional layout.
 
 By completing this lab, you will:
 - Understand how to include Bootstrap in a project
@@ -21,16 +27,24 @@ By completing this lab, you will:
 
 ### Setup
 1. Clone or download this repository
+    ```bash
+    git clone TODO ?
+    ```
 2. Navigate to the project directory
+    ```bash
+    cd w2_bootstrap_layouts_and_components
+    ```
 3. Install dependencies:
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 4. Start the development server:
-   ```bash
-   npm run serve
-   ```
+    ```bash
+    npm run serve
+    ```
 5. Open your browser to `http://localhost:3000`
+
+Check out the website in your browser -- pretty boring at the moment. Try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to see how this basic site responds to small screen sizes. It doesn't scale very well! We will see it transform as you complete the exercises.
 
 ### Running Tests
 To check your progress and ensure you're completing exercises correctly:
@@ -42,6 +56,8 @@ For continuous testing while you work:
 ```bash
 npm run test:watch
 ```
+
+
 
 ## 📚 Understanding Bootstrap Integration
 
@@ -64,6 +80,12 @@ As you progress through the exercises, you'll notice three types of learning:
 1. **🎯 Guided Code**: Complete code examples to learn new concepts
 2. **🔍 Fill-in-the-Blanks**: Strategic gaps marked with `****` for you to figure out
 3. **💡 Pattern Recognition**: Using Bootstrap class patterns you've already learned
+
+> ![NOTE]
+> Some Bootstrap components require JavaScript to function properly, such as the forms we use in this lab. The JavaScript is included for you, and you don't need to worry about it.
+
+> ![NOTE]
+> Each exercise contains important information about the classes you'll need to use. These classes are the foundation of styling with Bootstrap, and it is the purpose of this lab to familiarize you with them.
 
 ### Bootstrap Classes Cheat Sheet
 
@@ -95,43 +117,18 @@ Keep this handy as you work through the exercises:
 
 **What you're building:** A dark navigation bar with the brand "Community Hub" on the left and navigation links on the right. On mobile devices, the links will collapse into a hamburger menu.
 
+**Bootstrap Concepts Introduced**:
+- [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/): Bootstrap's navigation bar component. It is the container which holds the brand, navigation links, and other elements which generally appears at the top of the page. Items such as the navbar-brand (which is used to display the brand/logo), and navbar-nav (which is used to display the navigation links) go inside of the navbar component. The navbar can be made to collapse into a hamburger menu by adding the `navbar-expand-lg` class, which requires the use of the `Collapse` component, explained below.
+- [Collapse](https://getbootstrap.com/docs/5.3/components/collapse/): Bootstrap's Collapse component is used to show and hide any content. Here, we will use it to collapse the navigation links into a hamburger menu on smaller screens.
+- [Container](https://getbootstrap.com/docs/5.3/layout/containers/): Bootstrap's container component is used to wrap content and provide padding. It is used to center the content on the page and provide a maximum width.
+
 **Step-by-step instructions:**
 
 1. **Find the Exercise 1 comment** in `index.html` (around line 17)
 
-2. **Replace the TODO comment** with this navbar structure:
+2. **Replace the TODO comment** with provided navbar structure.
 
-```html
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">Community Hub</a>
-    
-    <!-- Mobile menu button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <!-- Navigation links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#connect">Connect</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-```
+3. **Test your work:** Run `npm test` - the first 5 tests should now pass! Try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to test your navbar's responsiveness. Shrink the size of the screen and watch the hamburger menu appear.
 
 **Bootstrap classes explained:**
 - `.navbar` - Base navbar component
@@ -146,47 +143,27 @@ Keep this handy as you work through the exercises:
 - `.nav-link` - Navigation link styling
 - `.ms-auto` - Pushes navigation to the right (margin-start: auto)
 
-**Test your work:** Run `npm test` - the first 5 tests should now pass!
 
 ---
 
 ### Exercise 2: Hero Section 🌟
 
-**Goal:** Update the existing hero section to be more visually appealing using Bootstrap classes.
+**Goal:** Update the existing hero section (a hero section is a big section at the top of the page which serves as an introduction to the website) to be more visually appealing using Bootstrap classes.
 
 **What you're building:** A large, centered hero section with a big heading, descriptive text, and call-to-action buttons.
 
+**Bootstrap Concepts Introduced**:
+- [Grid](https://getbootstrap.com/docs/5.3/layout/grid/): In this exercise, we only use the grid system (including rows and columns) to help us style the hero section width. We are not actually using its full power yet! In the next exercise we will learn more about the grid system and how to use it to create more complex layouts.
+- [Bootstrap Utilities](https://getbootstrap.com/docs/5.3/layout/utilities/:  When we add a breakpoint class like `.flex-sm-row`, this means that on small screens the flex direction will be vertical, but on larger screens this class will be ignored (and in our case it would fall back to the `flex-column` class which we also added).
+- [Button](https://getbootstrap.com/docs/5.3/components/buttons/): Bootstrap's button class can be used on `<button>` elements or on `<a>` elements as we are doing in this exercise.
+
 **Step-by-step instructions:**
 
-1. **Find the existing hero section** (around line 45 in `index.html`)
+1. **Find the existing hero section**
 
-2. **Replace the entire hero section** with this enhanced version:
+2. **Replace the entire hero section** with the code provided in the comment.
 
-```html
-<section class="bg-primary text-white py-5" id="home">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h1 class="display-4 fw-bold mb-4">
-          Welcome to Our Community
-        </h1>
-        <p class="lead mb-4">
-          Building connections, spreading kindness, creating togetherness in our evolving world. 
-          Join us in making a positive difference, one relationship at a time.
-        </p>
-        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-          <a href="#connect" class="btn btn-light btn-lg">
-            Join Our Community
-          </a>
-          <a href="#about" class="btn btn-outline-light btn-lg">
-            Learn More
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-```
+3. **Test your work:** Run `npm test` - Make sure the Hero Section tests are passing. Notice how if you make the screen smaller, the buttons will stack vertically.
 
 **Bootstrap classes explained:**
 - `.bg-primary` - Blue background color
@@ -196,6 +173,7 @@ Keep this handy as you work through the exercises:
 - `.fw-bold` - Bold font weight
 - `.mb-4` - Margin bottom (spacing)
 - `.lead` - Larger, emphasized text
+- `.row` - Row container for column items
 - `.col-lg-8` - 8 columns wide on large screens
 - `.text-center` - Center-aligned text
 - `.d-flex` - Display as flexbox
@@ -216,80 +194,25 @@ Keep this handy as you work through the exercises:
 
 **🔍 Discovery Challenge:** In this exercise, you'll fill in some blanks based on patterns you learned in Exercise 2!
 
+**Bootstrap Concepts Introduced**:
+- [Grid](https://getbootstrap.com/docs/5.3/layout/grid/): Bootstrap's grid system is a responsive layout system built with flexbox. The grid does not have to be explicitly defined, you can just create a container and add rows and columns as needed.
+- [Rows](https://getbootstrap.com/docs/5.3/layout/rows/): A horizontal group of columns that make up a Bootstrap grid. You can think of this as a horizontal flexbox container, with each column being a flex item (and this is how it actually works behind the scenes). Rows are created by adding the `.row` class to an element.
+- [Columns](https://getbootstrap.com/docs/5.3/layout/columns/): Bootstrap's columns are the building blocks of the grid system. They are used to create horizontal groups of content. Columns are created by adding the `.col` class to an element.
+
 **Step-by-step instructions:**
 
-1. **Find the Exercise 3 comment** (around line 55 in `index.html`)
+1. **Find the Exercise 3 comment**
 
-2. **Replace the existing content** with this grid structure:
+2. **Replace the existing content** with this grid structure included in the comment.
 
-```html
-<section class="py-5" id="about">
-  <div class="container">
-    <!-- Section header -->
-    <div class="row mb-5">
-      <div class="col-12 text-center">
-        <h2 class="display-6 fw-bold mb-3">Why Our Community Matters</h2>
-        <p class="lead ****-muted">
-          Discover the values that make our community strong and welcoming
-        </p>
-      </div>
-    </div>
-
-    <!-- Three column layout -->
-    <div class="row g-4">
-      <div class="****-md-4">
-        <div class="text-center">
-          <div class="****-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
-               style="width: 80px; height: 80px;">
-            <span class="text-white fs-2">❤️</span>
-          </div>
-          <h4 class="fw-bold mb-3">Kindness First</h4>
-          <p class="text-muted">
-            We believe that small acts of kindness create ripple effects that transform 
-            communities and change lives for the better.
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="****-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
-               style="width: 80px; height: 80px;">
-            <span class="****-white fs-2">🤝</span>
-          </div>
-          <h4 class="fw-bold mb-3">Support Network</h4>
-          <p class="text-muted">
-            No one should face challenges alone. Our community provides support, 
-            resources, and connections when you need them most.
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="text-center">
-          <div class="bg-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
-               style="width: 80px; height: 80px;">
-            <span class="text-white fs-2">🌱</span>
-          </div>
-          <h4 class="****-bold mb-3">Growth Together</h4>
-          <p class="****-muted">
-            Learning and growing together makes us all stronger. We celebrate 
-            every milestone and support each person's journey.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-```
-
-**🔍 Fill in the blanks:**
+3. **🔍 Fill in the blanks:**
 - **Hint 1:** `****-muted` - What class makes text gray? (Used in Exercise 2)
 - **Hint 2:** `****-md-4` - What class makes a column take 1/3 width on medium screens? (Look at the complete example)
 - **Hint 3:** `****-primary` - What class gives a blue background? (Used in Exercise 2)
 - **Hint 4:** `****-success` - What class gives a green background? (Check the cheat sheet)
 - **Hint 5:** `****-white` - What class makes text white? (Used in Exercise 2)
 - **Hint 6:** `****-bold` - What class makes text bold? (Used in Exercise 2)
+
 
 **Bootstrap classes explained:**
 - `.py-5` - Padding top and bottom
@@ -313,106 +236,25 @@ Keep this handy as you work through the exercises:
 
 **What you're building:** Three cards in a row (stacking on mobile) with headers, content, and action buttons.
 
+**Bootstrap Concepts Introduced**:
+- [Cards](https://getbootstrap.com/docs/5.3/components/card/): Bootstrap's cards are helpful for displaying items in a series in a consistent way.
+
 **🔍 Discovery Challenge:** You'll use the color patterns you've learned to style the card headers and buttons!
 
 **Step-by-step instructions:**
 
-1. **Find the Exercise 4 comment** (around line 65 in `index.html`)
+1. **Find the Exercise 4 comment**
 
-2. **Add this cards section:**
+2. **Add the cards section** found in the comment.
 
-```html
-<section class="bg-light py-5" id="connect">
-  <div class="container">
-    <!-- Section header -->
-    <div class="row mb-5">
-      <div class="col-12 text-center">
-        <h2 class="display-6 fw-bold mb-3">Ways to Get Involved</h2>
-        <p class="lead text-muted">
-          Choose how you'd like to make a difference in our community
-        </p>
-      </div>
-    </div>
-
-    <!-- Cards row -->
-    <div class="row g-4">
-      <!-- Volunteer Card -->
-      <div class="col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header ****-primary text-white">
-            <h5 class="card-title mb-0">Volunteer Opportunities</h5>
-          </div>
-          <div class="card-body d-flex flex-column">
-            <p class="card-text flex-grow-1">
-              Make a direct impact through our volunteer programs. From community 
-              cleanup events to mentoring programs, find your perfect way to give back.
-            </p>
-            <div class="mt-auto">
-              <span class="badge bg-secondary me-2">Flexible Schedule</span>
-              <span class="badge ****-secondary">All Skills Welcome</span>
-            </div>
-          </div>
-          <div class="card-footer bg-transparent">
-            <a href="#volunteer" class="btn ****-primary w-100">Get Started</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Events Card -->
-      <div class="col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header bg-success ****-white">
-            <h5 class="card-title mb-0">Community Events</h5>
-          </div>
-          <div class="card-body d-flex flex-column">
-            <p class="card-text flex-grow-1">
-              Join workshops, social gatherings, and educational events. From skill-sharing 
-              sessions to celebration events, there's always something happening.
-            </p>
-            <div class="mt-auto">
-              <span class="badge bg-secondary me-2">Monthly Events</span>
-              <span class="badge bg-secondary">Free to Attend</span>
-            </div>
-          </div>
-          <div class="card-footer bg-transparent">
-            <a href="#events" class="btn ****-success w-100">View Schedule</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Learning Card -->
-      <div class="col-lg-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header bg-info text-white">
-            <h5 class="card-title mb-0">Learning Together</h5>
-          </div>
-          <div class="card-body d-flex flex-column">
-            <p class="card-text flex-grow-1">
-              Expand your skills through community learning programs. From technology 
-              workshops to life skills sessions, we learn and grow together.
-            </p>
-            <div class="mt-auto">
-              <span class="badge ****-secondary me-2">All Levels</span>
-              <span class="badge bg-secondary">Peer Support</span>
-            </div>
-          </div>
-          <div class="card-footer bg-transparent">
-            <a href="#learning" class="btn btn-info w-100">Explore Courses</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-```
-
-**🔍 Fill in the blanks:**
+3. **🔍 Fill in the blanks:**
 - **Hint 1:** `****-primary` - What class gives a blue background? (You used this in Exercise 3)
 - **Hint 2:** `****-secondary` - What class gives a gray background? (Check the complete example)
 - **Hint 3:** `****-primary` - What button class makes a blue button? (Look at the pattern)
 - **Hint 4:** `****-white` - What class makes text white? (You used this multiple times)
 - **Hint 5:** `****-success` - What button class makes a green button? (Follow the color pattern)
 - **Hint 6:** `****-secondary` - What badge class makes a gray badge? (Same pattern as backgrounds)
+
 
 **Bootstrap classes explained:**
 - `.bg-light` - Light gray background
@@ -497,7 +339,7 @@ Keep this handy as you work through the exercises:
                 <!-- Message field -->
                 <div class="col-12">
                   <label for="message" class="form-label">Your Message</label>
-                  <textarea class="form-control" id="message" rows="4" 
+                  <textarea class="form-control" id="message" rows="4"
                             placeholder="Tell us what's on your mind..." required></textarea>
                 </div>
 
@@ -530,7 +372,7 @@ Keep this handy as you work through the exercises:
 **🔍 Fill in the blanks:**
 - **Hint 1:** `****-muted` - What class makes text gray? (You've used this several times)
 - **Hint 2:** `****-label` - What class styles form labels? (Think "form-____")
-- **Hint 3:** `****-control` - What class styles input fields? (Think "form-____") 
+- **Hint 3:** `****-control` - What class styles input fields? (Think "form-____")
 - **Hint 4:** `****-select` - What class styles select dropdowns? (Follow the form pattern)
 - **Hint 5:** `****-check` - What class contains checkboxes? (Think "form-____")
 - **Hint 6:** `****-check-input` - What class styles checkbox inputs? (Follow the pattern)
@@ -604,14 +446,14 @@ Keep this handy as you work through the exercises:
     <div class="row">
       <div class="col-md-6">
         <h5 class="fw-bold mb-3">Community Goals Progress</h5>
-        
+
         <div class="mb-3">
           <div class="d-flex justify-content-between mb-1">
             <span>New Members This Month</span>
             <span class="badge ****-primary">85%</span>
           </div>
           <div class="progress">
-            <div class="****-bar bg-primary" role="progressbar" 
+            <div class="****-bar bg-primary" role="progressbar"
                  style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
@@ -622,7 +464,7 @@ Keep this handy as you work through the exercises:
             <span class="badge bg-success">92%</span>
           </div>
           <div class="****">
-            <div class="progress-bar ****-success" role="progressbar" 
+            <div class="progress-bar ****-success" role="progressbar"
                  style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
@@ -695,12 +537,12 @@ Keep this handy as you work through the exercises:
     <!-- Alerts -->
     <div class="row">
       <div class="col-12">
-        
+
         <!-- Welcome alert -->
         <div class="alert ****-primary alert-dismissible fade show" role="alert">
           <h4 class="****-heading">Welcome to Our Community! 🎉</h4>
           <p class="mb-0">
-            Thank you for joining us in building a stronger, more connected community. 
+            Thank you for joining us in building a stronger, more connected community.
             Your participation makes a real difference in the lives of others.
           </p>
           <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
@@ -710,7 +552,7 @@ Keep this handy as you work through the exercises:
         <div class="alert ****-success alert-dismissible fade show" role="alert">
           <h4 class="alert-heading">Community Garden Success! 🌱</h4>
           <p>
-            Thanks to our amazing volunteers, we've successfully completed our community garden project. 
+            Thanks to our amazing volunteers, we've successfully completed our community garden project.
             Over 50 families now have access to fresh, locally-grown produce.
           </p>
           <hr>
@@ -736,8 +578,8 @@ Keep this handy as you work through the exercises:
         <div class="alert ****-warning" role="alert">
           <h4 class="alert-heading">Important Notice ⚠️</h4>
           <p class="mb-0">
-            Our community center will be closed for maintenance on March 10-12. 
-            All scheduled activities will be moved to alternative locations. 
+            Our community center will be closed for maintenance on March 10-12.
+            All scheduled activities will be moved to alternative locations.
             Contact us at <strong>info@communityhub.org</strong> for details.
           </p>
         </div>
@@ -787,12 +629,12 @@ Keep this handy as you work through the exercises:
 <footer class="****-dark ****-light py-5 mt-5">
   <div class="container">
     <div class="row g-4">
-      
+
       <!-- About section -->
       <div class="****-lg-4">
         <h5 class="fw-bold mb-3">Community Hub</h5>
         <p class="mb-3">
-          Building bridges of connection, kindness, and support in our evolving world. 
+          Building bridges of connection, kindness, and support in our evolving world.
           Together, we create positive change one relationship at a time.
         </p>
         <div class="d-flex gap-3">
@@ -886,21 +728,6 @@ Keep this handy as you work through the exercises:
 - `.me-3` - Margin end (right spacing)
 
 ---
-
-## 🧪 Testing Your Progress
-
-After completing each exercise, run the tests to check your work:
-
-```bash
-npm test
-```
-
-The tests will tell you:
-- ✅ Which exercises you've completed correctly
-- ❌ What still needs to be fixed
-- 📊 Your overall progress
-
-**Don't worry if you don't pass all tests immediately** - use the feedback to improve your code!
 
 ## 🔍 Answer Key for Discovery Challenges
 
@@ -1016,7 +843,6 @@ Now that you understand Bootstrap patterns, you can:
 - Explore the [Bootstrap documentation](https://getbootstrap.com/docs/5.3/) and recognize the patterns
 - Try customizing Bootstrap with your own CSS
 - Build your own projects using Bootstrap
-- Learn about other CSS frameworks like Tailwind or Bulma
 
 **Congratulations on completing the Bootstrap lab!** 🎉
 
