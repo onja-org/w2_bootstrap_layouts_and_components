@@ -15,21 +15,63 @@
     <body>
         <!-- Exercise 1: Navigation Bar -->
         <!--
-        TODO: Create a Bootstrap navbar here
-        - Use <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        - Include a brand "Community Hub"
-        - Add navigation links: Home, About, Connect, Contact
-        - Make it responsive with a toggler button
-        - See README.md for complete code example
+        🎯 GUIDED LEARNING: This is your first Bootstrap component!
+
+        Copy this complete navbar code to learn the structure:
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">Community Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#connect">Connect</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         -->
 
         <!-- Exercise 2: Hero Section -->
         <!--
-        TODO: Replace this section with an enhanced hero section
-        - Use <section class="bg-primary text-white py-5" id="home">
-        - Include display-4 heading and lead text
-        - Add call-to-action buttons
-        - See README.md for complete code example
+        🎯 GUIDED LEARNING: Replace the existing hero section below with this enhanced version:
+
+        <section class="bg-primary text-white py-5" id="home">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <h1 class="display-4 fw-bold mb-4">
+                  Welcome to Our Community
+                </h1>
+                <p class="lead mb-4">
+                  Building connections, spreading kindness, creating togetherness in our evolving world.
+                  Join us in making a positive difference, one relationship at a time.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                  <a href="#connect" class="btn btn-light btn-lg">
+                    Join Our Community
+                  </a>
+                  <a href="#about" class="btn btn-outline-light btn-lg">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         -->
         <div class="container-fluid bg-light py-5">
             <div class="container text-center">
@@ -43,11 +85,70 @@
 
         <!-- Exercise 3: Main Content Grid -->
         <!--
-        TODO: Replace this with a proper Bootstrap grid
-        - Use <section class="py-5" id="about">
-        - Create a 3-column layout with .col-md-4
-        - Include content about community values
-        - See README.md for complete code example
+        🔍 DISCOVERY CHALLENGE: Replace the content below with this code,
+        but fill in the blanks (****) using patterns from Exercise 2!
+
+        Hints:
+        - text-muted = gray text (you used this pattern in Exercise 2)
+        - col-md-4 = 1/3 width on medium screens
+        - bg-primary = blue background (you just used this!)
+        - bg-success = green background (check the cheat sheet)
+        - text-white = white text (you used this in Exercise 2)
+        - fw-bold = bold text (you used this in Exercise 2)
+
+        <section class="py-5" id="about">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-12 text-center">
+                <h2 class="display-6 fw-bold mb-3">Why Our Community Matters</h2>
+                <p class="lead ****-muted">
+                  Discover the values that make our community strong and welcoming
+                </p>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="****-md-4">
+                <div class="text-center">
+                  <div class="****-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                       style="width: 80px; height: 80px;">
+                    <span class="text-white fs-2">❤️</span>
+                  </div>
+                  <h4 class="fw-bold mb-3">Kindness First</h4>
+                  <p class="text-muted">
+                    We believe that small acts of kindness create ripple effects that transform
+                    communities and change lives for the better.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="text-center">
+                  <div class="****-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                       style="width: 80px; height: 80px;">
+                    <span class="****-white fs-2">🤝</span>
+                  </div>
+                  <h4 class="fw-bold mb-3">Support Network</h4>
+                  <p class="text-muted">
+                    No one should face challenges alone. Our community provides support,
+                    resources, and connections when you need them most.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="text-center">
+                  <div class="bg-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                       style="width: 80px; height: 80px;">
+                    <span class="text-white fs-2">🌱</span>
+                  </div>
+                  <h4 class="****-bold mb-3">Growth Together</h4>
+                  <p class="****-muted">
+                    Learning and growing together makes us all stronger. We celebrate
+                    every milestone and support each person's journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         -->
         <div class="container my-5">
             <div class="row">
@@ -60,52 +161,159 @@
 
         <!-- Exercise 4: Cards Section -->
         <!--
-        TODO: Add Bootstrap cards here
-        - Use <section class="bg-light py-5" id="connect">
-        - Create 3 cards using .card class
-        - Include card headers, bodies, and footers
-        - Add badges and buttons to cards
-        - See README.md for complete code example
+        🔍 DISCOVERY CHALLENGE: Use the color patterns you've learned!
+        Fill in the blanks (****) with the right Bootstrap classes.
+
+        Hints:
+        - bg-primary = blue background (you used this in Exercise 3)
+        - bg-secondary = gray background (check the cheat sheet)
+        - btn-primary = blue button (follow the pattern!)
+        - text-white = white text (you know this one!)
+        - btn-success = green button (follow the color pattern)
+
+        <section class="bg-light py-5" id="connect">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-12 text-center">
+                <h2 class="display-6 fw-bold mb-3">Ways to Get Involved</h2>
+                <p class="lead text-muted">
+                  Choose how you'd like to make a difference in our community
+                </p>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-header ****-primary text-white">
+                    <h5 class="card-title mb-0">Volunteer Opportunities</h5>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <p class="card-text flex-grow-1">
+                      Make a direct impact through our volunteer programs. From community
+                      cleanup events to mentoring programs, find your perfect way to give back.
+                    </p>
+                    <div class="mt-auto">
+                      <span class="badge bg-secondary me-2">Flexible Schedule</span>
+                      <span class="badge ****-secondary">All Skills Welcome</span>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-transparent">
+                    <a href="#volunteer" class="btn ****-primary w-100">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-header bg-success ****-white">
+                    <h5 class="card-title mb-0">Community Events</h5>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <p class="card-text flex-grow-1">
+                      Join workshops, social gatherings, and educational events. From skill-sharing
+                      sessions to celebration events, there's always something happening.
+                    </p>
+                    <div class="mt-auto">
+                      <span class="badge bg-secondary me-2">Monthly Events</span>
+                      <span class="badge bg-secondary">Free to Attend</span>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-transparent">
+                    <a href="#events" class="btn ****-success w-100">View Schedule</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-header bg-info text-white">
+                    <h5 class="card-title mb-0">Learning Together</h5>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <p class="card-text flex-grow-1">
+                      Expand your skills through community learning programs. From technology
+                      workshops to life skills sessions, we learn and grow together.
+                    </p>
+                    <div class="mt-auto">
+                      <span class="badge ****-secondary me-2">All Levels</span>
+                      <span class="badge bg-secondary">Peer Support</span>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-transparent">
+                    <a href="#learning" class="btn btn-info w-100">Explore Courses</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         -->
 
         <!-- Exercise 5: Forms -->
         <!--
-        TODO: Create a contact form here
-        - Use <section class="py-5" id="contact">
-        - Include form with .form-control inputs
-        - Add name, email, select, textarea fields
-        - Include a submit button
-        - See README.md for complete code example
+        🔍 DISCOVERY CHALLENGE: Apply text patterns and learn new form classes!
+        Fill in the blanks (****) with the right Bootstrap classes.
+
+        Hints:
+        - text-muted = gray text (you've used this several times)
+        - form-label = styles form labels (think "form-____")
+        - form-control = styles input fields (think "form-____")
+        - form-select = styles select dropdowns (follow the form pattern)
+        - form-check = contains checkboxes (think "form-____")
+        - form-check-input = styles checkbox inputs (follow the pattern)
+        - btn-primary = blue button (you used this in Exercise 4)
+
+        Copy this code and fill in the blanks:
+        See README.md Exercise 5 for the complete form code with blanks to fill in.
         -->
 
         <!-- Exercise 6: Buttons and Components -->
         <!--
-        TODO: Add buttons and components section here
-        - Use <section class="bg-light py-5">
-        - Include .btn-group with different button styles
-        - Add progress bars with .progress class
-        - Include badges with .badge class
-        - See README.md for complete code example
+        💡 PATTERN RECOGNITION CHALLENGE: Use the color patterns you've mastered!
+        Fill in the blanks (****) with the right Bootstrap classes.
+
+        Hints:
+        - btn-primary, btn-success, btn-info = button color pattern
+        - btn-outline-primary, btn-outline-warning = outline button pattern
+        - bg-primary = badge color (same as buttons!)
+        - progress-bar = creates the colored part of progress bars
+        - progress = creates the progress bar container
+
+        Copy this code and fill in the blanks:
+        See README.md Exercise 6 for the complete components code with blanks to fill in.
         -->
 
         <!-- Exercise 7: Alerts and Messages -->
         <!--
-        TODO: Add Bootstrap alerts here
-        - Use <section class="py-5">
-        - Include different alert types: .alert-primary, .alert-success, etc.
-        - Make some alerts dismissible with .alert-dismissible
-        - Add .alert-heading for formatted headings
-        - See README.md for complete code example
+        💡 MASTER CHALLENGE: You've learned all the color patterns - now apply them to alerts!
+        Fill in the blanks (****) with the right Bootstrap classes.
+
+        Hints:
+        - alert-primary = blue alert (follow the color pattern!)
+        - alert-heading = styles alert headings (think "alert-____")
+        - alert-success = green alert (same pattern as buttons!)
+        - btn-close = styles the close button (think "btn-____")
+        - alert-dismissible = makes alerts closeable (think "alert-____")
+        - alert-warning = yellow alert (you know this pattern!)
+
+        Copy this code and fill in the blanks:
+        See README.md Exercise 7 for the complete alerts code with blanks to fill in.
         -->
 
         <!-- Exercise 8: Footer -->
         <!--
-        TODO: Create a footer here
-        - Use <footer class="bg-dark text-light py-5 mt-5">
-        - Create multi-column layout with contact info
-        - Include links and company information
-        - Use .list-unstyled for clean link lists
-        - See README.md for complete code example
+        🔍 FINAL CHALLENGE: Apply everything you've learned about colors, text, and layout!
+        Fill in the blanks (****) with the right Bootstrap classes.
+
+        Hints:
+        - bg-dark, text-light = dark background with light text
+        - col-lg-4 = 4 columns wide on large screens (you know this!)
+        - text-light = light colored text
+        - list-unstyled = removes default list styling (think "list-____")
+        - text-decoration-none = removes underlines from links (think "text-____")
+        - fw-bold = makes text bold (you've used this many times!)
+        - mb-2, mb-3 = margin bottom (you know this pattern!)
+
+        Copy this code and fill in the blanks:
+        See README.md Exercise 8 for the complete footer code with blanks to fill in.
         -->
 
         <script

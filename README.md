@@ -1,6 +1,6 @@
 # Bootstrap Layouts and Components Lab 🏗️
 
-Welcome to the Community Connection Hub! In this hands-on lab, you'll learn Bootstrap 5 by building a website step-by-step. We'll provide you with all the content and detailed instructions - your job is to learn how to use Bootstrap components and layouts to implement the design.
+Welcome to the Community Connection Hub! In this hands-on lab, you'll learn Bootstrap 5 by building a website step-by-step. We'll provide you with detailed guidance and some fun discovery challenges to help you learn Bootstrap patterns.
 
 ## 🎯 Learning Objectives
 
@@ -10,6 +10,7 @@ By completing this lab, you will:
 - Implement common Bootstrap components (navbar, cards, forms, buttons, alerts)
 - Create a mobile-first, responsive web application
 - Practice semantic HTML structure with Bootstrap classes
+- Learn to recognize and apply Bootstrap class patterns
 
 ## 🚀 Getting Started
 
@@ -55,6 +56,34 @@ Bootstrap is already included in this project via CDN (Content Delivery Network)
 ```
 
 This method is quick and easy for learning. In real projects, you might install Bootstrap locally using npm.
+
+## 🧩 How This Lab Works
+
+As you progress through the exercises, you'll notice three types of learning:
+
+1. **🎯 Guided Code**: Complete code examples to learn new concepts
+2. **🔍 Fill-in-the-Blanks**: Strategic gaps marked with `****` for you to figure out
+3. **💡 Pattern Recognition**: Using Bootstrap class patterns you've already learned
+
+### Bootstrap Classes Cheat Sheet
+
+Keep this handy as you work through the exercises:
+
+**Color Classes:**
+- `bg-primary` (blue), `bg-success` (green), `bg-warning` (yellow), `bg-danger` (red), `bg-info` (cyan), `bg-secondary` (gray), `bg-light` (light gray), `bg-dark` (dark)
+- `text-primary`, `text-success`, `text-warning`, `text-danger`, `text-info`, `text-secondary`, `text-light`, `text-dark`, `text-white`, `text-muted`
+
+**Button Classes:**
+- `btn-primary`, `btn-success`, `btn-warning`, `btn-danger`, `btn-info`, `btn-secondary`, `btn-light`, `btn-dark`
+- `btn-outline-primary`, `btn-outline-success`, etc.
+- `btn-lg` (large), `btn-sm` (small)
+
+**Alert Classes:**
+- `alert-primary`, `alert-success`, `alert-warning`, `alert-danger`, `alert-info`, `alert-secondary`
+
+**Column Classes:**
+- `col-12` (full width), `col-6` (half width), `col-4` (one third), `col-3` (one quarter)
+- `col-md-6` (half width on medium screens+), `col-lg-4` (one third on large screens+)
 
 ---
 
@@ -185,6 +214,8 @@ This method is quick and easy for learning. In real projects, you might install 
 
 **What you're building:** A section with a header and three columns that stack on mobile devices.
 
+**🔍 Discovery Challenge:** In this exercise, you'll fill in some blanks based on patterns you learned in Exercise 2!
+
 **Step-by-step instructions:**
 
 1. **Find the Exercise 3 comment** (around line 55 in `index.html`)
@@ -198,7 +229,7 @@ This method is quick and easy for learning. In real projects, you might install 
     <div class="row mb-5">
       <div class="col-12 text-center">
         <h2 class="display-6 fw-bold mb-3">Why Our Community Matters</h2>
-        <p class="lead text-muted">
+        <p class="lead ****-muted">
           Discover the values that make our community strong and welcoming
         </p>
       </div>
@@ -206,9 +237,9 @@ This method is quick and easy for learning. In real projects, you might install 
 
     <!-- Three column layout -->
     <div class="row g-4">
-      <div class="col-md-4">
+      <div class="****-md-4">
         <div class="text-center">
-          <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
+          <div class="****-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
                style="width: 80px; height: 80px;">
             <span class="text-white fs-2">❤️</span>
           </div>
@@ -222,9 +253,9 @@ This method is quick and easy for learning. In real projects, you might install 
       
       <div class="col-md-4">
         <div class="text-center">
-          <div class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
+          <div class="****-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
                style="width: 80px; height: 80px;">
-            <span class="text-white fs-2">🤝</span>
+            <span class="****-white fs-2">🤝</span>
           </div>
           <h4 class="fw-bold mb-3">Support Network</h4>
           <p class="text-muted">
@@ -240,8 +271,8 @@ This method is quick and easy for learning. In real projects, you might install 
                style="width: 80px; height: 80px;">
             <span class="text-white fs-2">🌱</span>
           </div>
-          <h4 class="fw-bold mb-3">Growth Together</h4>
-          <p class="text-muted">
+          <h4 class="****-bold mb-3">Growth Together</h4>
+          <p class="****-muted">
             Learning and growing together makes us all stronger. We celebrate 
             every milestone and support each person's journey.
           </p>
@@ -251,6 +282,14 @@ This method is quick and easy for learning. In real projects, you might install 
   </div>
 </section>
 ```
+
+**🔍 Fill in the blanks:**
+- **Hint 1:** `****-muted` - What class makes text gray? (Used in Exercise 2)
+- **Hint 2:** `****-md-4` - What class makes a column take 1/3 width on medium screens? (Look at the complete example)
+- **Hint 3:** `****-primary` - What class gives a blue background? (Used in Exercise 2)
+- **Hint 4:** `****-success` - What class gives a green background? (Check the cheat sheet)
+- **Hint 5:** `****-white` - What class makes text white? (Used in Exercise 2)
+- **Hint 6:** `****-bold` - What class makes text bold? (Used in Exercise 2)
 
 **Bootstrap classes explained:**
 - `.py-5` - Padding top and bottom
@@ -273,6 +312,8 @@ This method is quick and easy for learning. In real projects, you might install 
 **Goal:** Create a section with Bootstrap cards showcasing ways to get involved.
 
 **What you're building:** Three cards in a row (stacking on mobile) with headers, content, and action buttons.
+
+**🔍 Discovery Challenge:** You'll use the color patterns you've learned to style the card headers and buttons!
 
 **Step-by-step instructions:**
 
@@ -298,7 +339,7 @@ This method is quick and easy for learning. In real projects, you might install 
       <!-- Volunteer Card -->
       <div class="col-lg-4">
         <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header bg-primary text-white">
+          <div class="card-header ****-primary text-white">
             <h5 class="card-title mb-0">Volunteer Opportunities</h5>
           </div>
           <div class="card-body d-flex flex-column">
@@ -308,11 +349,11 @@ This method is quick and easy for learning. In real projects, you might install 
             </p>
             <div class="mt-auto">
               <span class="badge bg-secondary me-2">Flexible Schedule</span>
-              <span class="badge bg-secondary">All Skills Welcome</span>
+              <span class="badge ****-secondary">All Skills Welcome</span>
             </div>
           </div>
           <div class="card-footer bg-transparent">
-            <a href="#volunteer" class="btn btn-primary w-100">Get Started</a>
+            <a href="#volunteer" class="btn ****-primary w-100">Get Started</a>
           </div>
         </div>
       </div>
@@ -320,7 +361,7 @@ This method is quick and easy for learning. In real projects, you might install 
       <!-- Events Card -->
       <div class="col-lg-4">
         <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header bg-success text-white">
+          <div class="card-header bg-success ****-white">
             <h5 class="card-title mb-0">Community Events</h5>
           </div>
           <div class="card-body d-flex flex-column">
@@ -334,7 +375,7 @@ This method is quick and easy for learning. In real projects, you might install 
             </div>
           </div>
           <div class="card-footer bg-transparent">
-            <a href="#events" class="btn btn-success w-100">View Schedule</a>
+            <a href="#events" class="btn ****-success w-100">View Schedule</a>
           </div>
         </div>
       </div>
@@ -351,7 +392,7 @@ This method is quick and easy for learning. In real projects, you might install 
               workshops to life skills sessions, we learn and grow together.
             </p>
             <div class="mt-auto">
-              <span class="badge bg-secondary me-2">All Levels</span>
+              <span class="badge ****-secondary me-2">All Levels</span>
               <span class="badge bg-secondary">Peer Support</span>
             </div>
           </div>
@@ -364,6 +405,14 @@ This method is quick and easy for learning. In real projects, you might install 
   </div>
 </section>
 ```
+
+**🔍 Fill in the blanks:**
+- **Hint 1:** `****-primary` - What class gives a blue background? (You used this in Exercise 3)
+- **Hint 2:** `****-secondary` - What class gives a gray background? (Check the complete example)
+- **Hint 3:** `****-primary` - What button class makes a blue button? (Look at the pattern)
+- **Hint 4:** `****-white` - What class makes text white? (You used this multiple times)
+- **Hint 5:** `****-success` - What button class makes a green button? (Follow the color pattern)
+- **Hint 6:** `****-secondary` - What badge class makes a gray badge? (Same pattern as backgrounds)
 
 **Bootstrap classes explained:**
 - `.bg-light` - Light gray background
@@ -390,6 +439,8 @@ This method is quick and easy for learning. In real projects, you might install 
 
 **What you're building:** A contact form with name, email, message fields and proper Bootstrap styling.
 
+**🔍 Discovery Challenge:** You'll apply text color patterns and use new form classes!
+
 **Step-by-step instructions:**
 
 1. **Find the Exercise 5 comment** (around line 75 in `index.html`)
@@ -404,7 +455,7 @@ This method is quick and easy for learning. In real projects, you might install 
         <!-- Section header -->
         <div class="text-center mb-5">
           <h2 class="display-6 fw-bold mb-3">Get in Touch</h2>
-          <p class="lead text-muted">
+          <p class="lead ****-muted">
             We'd love to hear from you! Send us a message and we'll get back to you soon.
           </p>
         </div>
@@ -416,8 +467,8 @@ This method is quick and easy for learning. In real projects, you might install 
               <div class="row g-3">
                 <!-- Name fields -->
                 <div class="col-md-6">
-                  <label for="firstName" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="firstName" required>
+                  <label for="firstName" class="****-label">First Name</label>
+                  <input type="text" class="****-control" id="firstName" required>
                 </div>
                 <div class="col-md-6">
                   <label for="lastName" class="form-label">Last Name</label>
@@ -427,13 +478,13 @@ This method is quick and easy for learning. In real projects, you might install 
                 <!-- Email field -->
                 <div class="col-12">
                   <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="email" required>
+                  <input type="email" class="****-control" id="email" required>
                 </div>
 
                 <!-- Subject field -->
                 <div class="col-12">
                   <label for="subject" class="form-label">How did you hear about us?</label>
-                  <select class="form-select" id="subject" required>
+                  <select class="****-select" id="subject" required>
                     <option value="">Choose...</option>
                     <option value="friend">Friend or family member</option>
                     <option value="social">Social media</option>
@@ -452,8 +503,8 @@ This method is quick and easy for learning. In real projects, you might install 
 
                 <!-- Checkbox -->
                 <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="newsletter">
+                  <div class="****-check">
+                    <input class="****-check-input" type="checkbox" id="newsletter">
                     <label class="form-check-label" for="newsletter">
                       I'd like to receive community updates and newsletter
                     </label>
@@ -462,7 +513,7 @@ This method is quick and easy for learning. In real projects, you might install 
 
                 <!-- Submit button -->
                 <div class="col-12 text-center pt-3">
-                  <button type="submit" class="btn btn-primary btn-lg px-5">
+                  <button type="submit" class="btn ****-primary btn-lg px-5">
                     Send Message
                   </button>
                 </div>
@@ -476,18 +527,22 @@ This method is quick and easy for learning. In real projects, you might install 
 </section>
 ```
 
-**Bootstrap classes explained:**
-- `.justify-content-center` - Centers content horizontally
-- `.col-lg-8` - 8 columns wide on large screens (centered with remaining space)
+**🔍 Fill in the blanks:**
+- **Hint 1:** `****-muted` - What class makes text gray? (You've used this several times)
+- **Hint 2:** `****-label` - What class styles form labels? (Think "form-____")
+- **Hint 3:** `****-control` - What class styles input fields? (Think "form-____") 
+- **Hint 4:** `****-select` - What class styles select dropdowns? (Follow the form pattern)
+- **Hint 5:** `****-check` - What class contains checkboxes? (Think "form-____")
+- **Hint 6:** `****-check-input` - What class styles checkbox inputs? (Follow the pattern)
+- **Hint 7:** `****-primary` - What button class makes a blue button? (You used this in Exercise 4)
+
+**New concepts:**
 - `.form-label` - Styles form labels
 - `.form-control` - Styles input fields and textareas
 - `.form-select` - Styles select dropdown
 - `.form-check` - Container for checkbox/radio
 - `.form-check-input` - Styles checkbox/radio input
 - `.form-check-label` - Styles checkbox/radio label
-- `.p-4` - Padding on all sides
-- `.pt-3` - Padding top only
-- `.px-5` - Padding left and right
 
 ---
 
@@ -496,6 +551,8 @@ This method is quick and easy for learning. In real projects, you might install 
 **Goal:** Create a section showcasing different Bootstrap button styles and components.
 
 **What you're building:** A section with various button styles, progress bars, and badges.
+
+**💡 Pattern Recognition Challenge:** Now you'll use the color patterns you've mastered to style buttons and components!
 
 **Step-by-step instructions:**
 
@@ -520,9 +577,9 @@ This method is quick and easy for learning. In real projects, you might install 
     <div class="row g-4 mb-5">
       <div class="col-12 text-center">
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-primary btn-lg">Join Community</button>
-          <button type="button" class="btn btn-success btn-lg">Start Volunteering</button>
-          <button type="button" class="btn btn-info btn-lg">Learn More</button>
+          <button type="button" class="btn ****-primary btn-lg">Join Community</button>
+          <button type="button" class="btn ****-success btn-lg">Start Volunteering</button>
+          <button type="button" class="btn ****-info btn-lg">Learn More</button>
         </div>
       </div>
     </div>
@@ -530,13 +587,13 @@ This method is quick and easy for learning. In real projects, you might install 
     <!-- Different button styles -->
     <div class="row g-3 mb-5">
       <div class="col-md-3">
-        <button class="btn btn-outline-primary w-100">Primary Action</button>
+        <button class="btn ****-outline-primary w-100">Primary Action</button>
       </div>
       <div class="col-md-3">
         <button class="btn btn-outline-secondary w-100">Secondary</button>
       </div>
       <div class="col-md-3">
-        <button class="btn btn-outline-warning w-100">Warning</button>
+        <button class="btn ****-outline-warning w-100">Warning</button>
       </div>
       <div class="col-md-3">
         <button class="btn btn-outline-danger w-100">Important</button>
@@ -551,10 +608,10 @@ This method is quick and easy for learning. In real projects, you might install 
         <div class="mb-3">
           <div class="d-flex justify-content-between mb-1">
             <span>New Members This Month</span>
-            <span class="badge bg-primary">85%</span>
+            <span class="badge ****-primary">85%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-primary" role="progressbar" 
+            <div class="****-bar bg-primary" role="progressbar" 
                  style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
@@ -564,8 +621,8 @@ This method is quick and easy for learning. In real projects, you might install 
             <span>Volunteer Hours Goal</span>
             <span class="badge bg-success">92%</span>
           </div>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" 
+          <div class="****">
+            <div class="progress-bar ****-success" role="progressbar" 
                  style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
@@ -574,10 +631,10 @@ This method is quick and easy for learning. In real projects, you might install 
       <div class="col-md-6">
         <h5 class="fw-bold mb-3">Community Stats</h5>
         <div class="d-flex flex-wrap gap-2">
-          <span class="badge bg-primary fs-6 p-2">1,247 Active Members</span>
-          <span class="badge bg-success fs-6 p-2">3,580 Volunteer Hours</span>
+          <span class="****-bg-primary fs-6 p-2">1,247 Active Members</span>
+          <span class="badge ****-success fs-6 p-2">3,580 Volunteer Hours</span>
           <span class="badge bg-warning fs-6 p-2">156 Events This Year</span>
-          <span class="badge bg-info fs-6 p-2">89% Satisfaction Rate</span>
+          <span class="badge ****-info fs-6 p-2">89% Satisfaction Rate</span>
         </div>
       </div>
     </div>
@@ -585,7 +642,16 @@ This method is quick and easy for learning. In real projects, you might install 
 </section>
 ```
 
-**Bootstrap classes explained:**
+**💡 Pattern Recognition Challenge - Fill in the blanks:**
+- **Challenge 1:** `****-primary`, `****-success`, `****-info` - What's the pattern for button colors?
+- **Challenge 2:** `****-outline-primary`, `****-outline-warning` - What's the pattern for outline buttons?
+- **Challenge 3:** `****-primary` - What's the pattern for badge colors? (Same as buttons!)
+- **Challenge 4:** `****-bar` - What class creates the colored part of a progress bar?
+- **Challenge 5:** `****` - What class creates the progress bar container?
+- **Challenge 6:** `****-success` - What class makes a green progress bar?
+- **Challenge 7:** `****-bg-primary`, `****-success`, `****-info` - What's the pattern for badge backgrounds?
+
+**New concepts:**
 - `.btn-group` - Groups buttons together
 - `.btn-lg` - Large button size
 - `.btn-outline-*` - Outlined button variants
@@ -604,6 +670,8 @@ This method is quick and easy for learning. In real projects, you might install 
 **Goal:** Add Bootstrap alerts to provide user feedback and information.
 
 **What you're building:** Different types of alerts for various messages and notifications.
+
+**💡 Master Challenge:** You've learned all the color patterns - now apply them to alerts!
 
 **Step-by-step instructions:**
 
@@ -629,8 +697,8 @@ This method is quick and easy for learning. In real projects, you might install 
       <div class="col-12">
         
         <!-- Welcome alert -->
-        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-          <h4 class="alert-heading">Welcome to Our Community! 🎉</h4>
+        <div class="alert ****-primary alert-dismissible fade show" role="alert">
+          <h4 class="****-heading">Welcome to Our Community! 🎉</h4>
           <p class="mb-0">
             Thank you for joining us in building a stronger, more connected community. 
             Your participation makes a real difference in the lives of others.
@@ -639,7 +707,7 @@ This method is quick and easy for learning. In real projects, you might install 
         </div>
 
         <!-- Success alert -->
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <div class="alert ****-success alert-dismissible fade show" role="alert">
           <h4 class="alert-heading">Community Garden Success! 🌱</h4>
           <p>
             Thanks to our amazing volunteers, we've successfully completed our community garden project. 
@@ -649,11 +717,11 @@ This method is quick and easy for learning. In real projects, you might install 
           <p class="mb-0">
             <strong>Impact:</strong> 500+ pounds of fresh vegetables donated to local food banks.
           </p>
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <button type="button" class="****-close" data-bs-dismiss="alert"></button>
         </div>
 
         <!-- Info alert -->
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <div class="alert alert-info ****-dismissible fade show" role="alert">
           <h4 class="alert-heading">Upcoming Events 📅</h4>
           <p class="mb-2">Don't miss these exciting community events this month:</p>
           <ul class="mb-0">
@@ -661,11 +729,11 @@ This method is quick and easy for learning. In real projects, you might install 
             <li><strong>March 22:</strong> Skills Workshop - Digital Literacy</li>
             <li><strong>March 29:</strong> Community Potluck & Celebration</li>
           </ul>
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="****"></button>
         </div>
 
         <!-- Warning alert -->
-        <div class="alert alert-warning" role="alert">
+        <div class="alert ****-warning" role="alert">
           <h4 class="alert-heading">Important Notice ⚠️</h4>
           <p class="mb-0">
             Our community center will be closed for maintenance on March 10-12. 
@@ -680,7 +748,16 @@ This method is quick and easy for learning. In real projects, you might install 
 </section>
 ```
 
-**Bootstrap classes explained:**
+**💡 Master Challenge - Fill in the blanks:**
+- **Challenge 1:** `****-primary` - What alert class makes a blue alert? (Follow the color pattern!)
+- **Challenge 2:** `****-heading` - What class styles alert headings? (Think "alert-____")
+- **Challenge 3:** `****-success` - What alert class makes a green alert? (Same pattern as buttons!)
+- **Challenge 4:** `****-close` - What class styles the close button? (Think "btn-____")
+- **Challenge 5:** `****-dismissible` - What class makes alerts closeable? (Think "alert-____")
+- **Challenge 6:** `data-bs-dismiss="****"` - What word goes here to dismiss alerts?
+- **Challenge 7:** `****-warning` - What alert class makes a yellow alert? (You know this pattern!)
+
+**New concepts:**
 - `.alert` - Base alert component
 - `.alert-primary`, `.alert-success`, `.alert-info`, `.alert-warning` - Alert color variants
 - `.alert-dismissible` - Makes alert closeable
@@ -698,6 +775,8 @@ This method is quick and easy for learning. In real projects, you might install 
 
 **What you're building:** A dark footer with company info, links, and contact details in a responsive grid.
 
+**🔍 Final Challenge:** Apply everything you've learned about colors, text, and layout!
+
 **Step-by-step instructions:**
 
 1. **Find the Exercise 8 comment** (around line 105 in `index.html`)
@@ -705,12 +784,12 @@ This method is quick and easy for learning. In real projects, you might install 
 2. **Add this footer section:**
 
 ```html
-<footer class="bg-dark text-light py-5 mt-5">
+<footer class="****-dark ****-light py-5 mt-5">
   <div class="container">
     <div class="row g-4">
       
       <!-- About section -->
-      <div class="col-lg-4">
+      <div class="****-lg-4">
         <h5 class="fw-bold mb-3">Community Hub</h5>
         <p class="mb-3">
           Building bridges of connection, kindness, and support in our evolving world. 
@@ -718,28 +797,28 @@ This method is quick and easy for learning. In real projects, you might install 
         </p>
         <div class="d-flex gap-3">
           <a href="#" class="text-light">Facebook</a>
-          <a href="#" class="text-light">Twitter</a>
+          <a href="#" class="****-light">Twitter</a>
           <a href="#" class="text-light">Instagram</a>
         </div>
       </div>
 
       <!-- Quick links -->
-      <div class="col-lg-2 col-md-4">
+      <div class="col-lg-2 ****-md-4">
         <h6 class="fw-bold mb-3">Quick Links</h6>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Home</a></li>
+        <ul class="****-unstyled">
+          <li class="mb-2"><a href="#home" class="text-light ****-decoration-none">Home</a></li>
           <li class="mb-2"><a href="#about" class="text-light text-decoration-none">About</a></li>
-          <li class="mb-2"><a href="#connect" class="text-light text-decoration-none">Get Involved</a></li>
-          <li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+          <li class="mb-2"><a href="#connect" class="****-light text-decoration-none">Get Involved</a></li>
+          <li class="mb-2"><a href="#contact" class="text-light ****-decoration-none">Contact</a></li>
         </ul>
       </div>
 
       <!-- Programs -->
       <div class="col-lg-2 col-md-4">
-        <h6 class="fw-bold mb-3">Programs</h6>
+        <h6 class="****-bold mb-3">Programs</h6>
         <ul class="list-unstyled">
           <li class="mb-2"><a href="#" class="text-light text-decoration-none">Volunteering</a></li>
-          <li class="mb-2"><a href="#" class="text-light text-decoration-none">Events</a></li>
+          <li class="****-2"><a href="#" class="text-light text-decoration-none">Events</a></li>
           <li class="mb-2"><a href="#" class="text-light text-decoration-none">Learning</a></li>
           <li class="mb-2"><a href="#" class="text-light text-decoration-none">Support</a></li>
         </ul>
@@ -747,7 +826,7 @@ This method is quick and easy for learning. In real projects, you might install 
 
       <!-- Contact info -->
       <div class="col-lg-4 col-md-4">
-        <h6 class="fw-bold mb-3">Contact Us</h6>
+        <h6 class="fw-bold ****-3">Contact Us</h6>
         <div class="mb-2">
           <strong>Address:</strong><br>
           123 Community Street<br>
@@ -756,7 +835,7 @@ This method is quick and easy for learning. In real projects, you might install 
         <div class="mb-2">
           <strong>Phone:</strong> (555) 123-4567
         </div>
-        <div class="mb-2">
+        <div class="****-2">
           <strong>Email:</strong> hello@communityhub.org
         </div>
         <div>
@@ -771,19 +850,31 @@ This method is quick and easy for learning. In real projects, you might install 
     <!-- Bottom section -->
     <hr class="my-4">
     <div class="row">
-      <div class="col-md-6">
+      <div class="****-md-6">
         <p class="mb-0">&copy; 2024 Community Hub. Made with ❤️ for our community.</p>
       </div>
-      <div class="col-md-6 text-md-end">
+      <div class="col-md-6 ****-md-end">
         <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
-        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+        <a href="#" class="text-light ****-decoration-none">Terms of Service</a>
       </div>
     </div>
   </div>
 </footer>
 ```
 
-**Bootstrap classes explained:**
+**🔍 Final Challenge - Fill in the blanks:**
+- **Challenge 1:** `****-dark`, `****-light` - What classes make a dark background with light text?
+- **Challenge 2:** `****-lg-4` - What class makes a column 4 units wide on large screens?
+- **Challenge 3:** `****-light` - What class makes text light colored?
+- **Challenge 4:** `****-md-4` - What class makes a column 4 units wide on medium screens?
+- **Challenge 5:** `****-unstyled` - What class removes default list styling? (Think "list-____")
+- **Challenge 6:** `****-decoration-none` - What class removes underlines from links? (Think "text-____")
+- **Challenge 7:** `****-bold` - What class makes text bold?
+- **Challenge 8:** `****-2`, `****-3` - What classes add margin bottom? (Think "mb-____")
+- **Challenge 9:** `****-md-6` - What class makes a column half-width on medium screens?
+- **Challenge 10:** `****-md-end` - What class right-aligns content on medium screens? (Think "text-____")
+
+**Concepts reinforced:**
 - `.bg-dark text-light` - Dark background with light text
 - `.py-5` - Padding top and bottom
 - `.mt-5` - Margin top
@@ -811,39 +902,105 @@ The tests will tell you:
 
 **Don't worry if you don't pass all tests immediately** - use the feedback to improve your code!
 
-## 🎨 Customization
+## 🔍 Answer Key for Discovery Challenges
 
-Once you've completed all exercises, try these enhancements:
+**Stuck on the fill-in-the-blanks?** Here are the answers:
 
-1. **Change colors** - Modify the Bootstrap color classes (`.bg-primary` to `.bg-success`, etc.)
-2. **Adjust spacing** - Try different padding/margin classes (`.py-3` instead of `.py-5`)
-3. **Add content** - Include your own text and information
-4. **Experiment with layouts** - Try different column combinations in the grid
+<details>
+<summary>Exercise 3 Answers (Click to reveal)</summary>
 
-## 🔧 Troubleshooting
+- `text-muted` (gray text)
+- `col-md-4` (1/3 width on medium screens)
+- `bg-primary` (blue background)
+- `bg-success` (green background)
+- `text-white` (white text)
+- `fw-bold` (bold text)
 
-**Common issues and solutions:**
+</details>
 
-1. **Content looks unstyled** 
-   - Check that Bootstrap CSS is loaded in the `<head>`
-   - Verify class names are spelled correctly
+<details>
+<summary>Exercise 4 Answers (Click to reveal)</summary>
 
-2. **Layout doesn't look right**
-   - Make sure you're using the grid system properly (`.container` > `.row` > `.col-*`)
-   - Check that you have the right column classes
+- `bg-primary` (blue background)
+- `bg-secondary` (gray background)
+- `btn-primary` (blue button)
+- `text-white` (white text)
+- `btn-success` (green button)
+- `bg-secondary` (gray badge)
 
-3. **Tests failing**
-   - Read the test output carefully - it tells you exactly what's missing
-   - Make sure you're using the exact class names from the instructions
+</details>
 
-4. **Mobile view problems**
-   - Test your site at different screen sizes
-   - Bootstrap is mobile-first, so start with mobile and work up
+<details>
+<summary>Exercise 5 Answers (Click to reveal)</summary>
 
-## 📚 What You've Learned
+- `text-muted` (gray text)
+- `form-label` (form label styling)
+- `form-control` (input styling)
+- `form-select` (select dropdown styling)
+- `form-check` (checkbox container)
+- `form-check-input` (checkbox input styling)
+- `btn-primary` (blue button)
 
-By completing this lab, you now know how to:
+</details>
 
+<details>
+<summary>Exercise 6 Answers (Click to reveal)</summary>
+
+- `btn-primary`, `btn-success`, `btn-info` (button colors)
+- `btn-outline-primary`, `btn-outline-warning` (outline buttons)
+- `bg-primary` (badge color)
+- `progress-bar` (progress bar element)
+- `progress` (progress container)
+- `bg-success` (green progress bar)
+- `badge bg-primary`, `bg-success`, `bg-info` (badge backgrounds)
+
+</details>
+
+<details>
+<summary>Exercise 7 Answers (Click to reveal)</summary>
+
+- `alert-primary` (blue alert)
+- `alert-heading` (alert heading styling)
+- `alert-success` (green alert)
+- `btn-close` (close button)
+- `alert-dismissible` (dismissible alert)
+- `alert` (dismiss target)
+- `alert-warning` (yellow alert)
+
+</details>
+
+<details>
+<summary>Exercise 8 Answers (Click to reveal)</summary>
+
+- `bg-dark`, `text-light` (dark background, light text)
+- `col-lg-4` (4 columns on large screens)
+- `text-light` (light text)
+- `col-md-4` (4 columns on medium screens)
+- `list-unstyled` (no list styling)
+- `text-decoration-none` (no underline)
+- `fw-bold` (bold text)
+- `mb-2`, `mb-3` (margin bottom)
+- `col-md-6` (half width on medium screens)
+- `text-md-end` (right align on medium screens)
+
+</details>
+
+## 🎨 What You've Learned
+
+By completing this lab, you now understand:
+
+### 🎯 Bootstrap Patterns
+- **Color System**: `primary` (blue), `success` (green), `warning` (yellow), `danger` (red), `info` (cyan), `secondary` (gray)
+- **Component Variants**: How the same color names work across buttons, alerts, badges, backgrounds, and text
+- **Responsive Grid**: How `col-*` classes create flexible layouts
+- **Utility Classes**: How spacing (`mb-3`), text (`text-center`), and display (`d-flex`) classes work
+
+### 🧠 Problem-Solving Skills
+- **Pattern Recognition**: Identifying how Bootstrap class naming follows consistent patterns
+- **Context Clues**: Using surrounding code to figure out missing pieces
+- **Documentation Reading**: Understanding how to use Bootstrap's systematic approach
+
+### 🛠️ Technical Skills
 - ✅ Include Bootstrap in a project via CDN
 - ✅ Create responsive navigation with `.navbar` components
 - ✅ Build layouts using Bootstrap's grid system (`.container`, `.row`, `.col-*`)
@@ -854,13 +1011,13 @@ By completing this lab, you now know how to:
 
 ## 🌟 Next Steps
 
-Now that you understand Bootstrap basics, you can:
+Now that you understand Bootstrap patterns, you can:
 
-- Explore the [Bootstrap documentation](https://getbootstrap.com/docs/5.3/) for more components
+- Explore the [Bootstrap documentation](https://getbootstrap.com/docs/5.3/) and recognize the patterns
 - Try customizing Bootstrap with your own CSS
 - Build your own projects using Bootstrap
-- Learn about CSS frameworks like Tailwind or Bulma
+- Learn about other CSS frameworks like Tailwind or Bulma
 
 **Congratulations on completing the Bootstrap lab!** 🎉
 
-You've built a complete, responsive website and learned the fundamentals of CSS frameworks. These skills will help you build beautiful, professional websites quickly and efficiently.
+You've not only learned how to use Bootstrap components, but you've also developed the pattern recognition skills that will help you learn any CSS framework quickly and efficiently.
