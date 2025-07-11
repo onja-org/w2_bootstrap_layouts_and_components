@@ -1,6 +1,6 @@
 # Bootstrap Layouts and Components Lab 🏗️
 
-Welcome to the Community Connection Hub! In this hands-on lab, you'll learn Bootstrap 5 by building a website step-by-step. We'll provide you with detailed guidance and some fun discovery challenges to help you learn Bootstrap patterns.
+Welcome to the Community Connection Hub! In this hands-on lab, you'll learn Bootstrap 5 by rebuilding an unstyled website step-by-step with Bootstrap.
 
 ## 👢 What is Bootstrap?
 
@@ -28,7 +28,7 @@ By completing this lab, you will:
 ### Setup
 1. Clone or download this repository
     ```bash
-    git clone TODO ?
+    git clone [TODO: REPLACE WITH ACTUAL REPOSITORY URL ONCE IT IS HOSTED IN THE ONJA ORGANIZATION]
     ```
 2. Navigate to the project directory
     ```bash
@@ -44,7 +44,7 @@ By completing this lab, you will:
     ```
 5. Open your browser to `http://localhost:3000`
 
-Check out the website in your browser -- pretty boring at the moment. Try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to see how this basic site responds to small screen sizes. It doesn't scale very well! We will see it transform as you complete the exercises.
+You now have the basic website up and running. Check out the website in your browser -- it is pretty boring at the moment! We will see it transform as you complete the exercises.
 
 ### Running Tests
 To check your progress and ensure you're completing exercises correctly:
@@ -61,7 +61,8 @@ npm run test:watch
 
 ## 📚 Understanding Bootstrap Integration
 
-Bootstrap is already included in this project via CDN (Content Delivery Network). Look at the `<head>` section of `index.html`:
+Including Bootstrap in your project is easy!
+Bootstrap is included by adding a `link` and a `script` tag so that the library is downloaded and included in your website. Look at the `<head>` section of `index.html`:
 
 ```html
 <!-- Bootstrap CSS -->
@@ -71,7 +72,9 @@ Bootstrap is already included in this project via CDN (Content Delivery Network)
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
-This method is quick and easy for learning. In real projects, you might install Bootstrap locally using npm.
+This has already been done in this project -- Bootstrap classes and components are ready to use in your HTML!
+
+This direct linking method is quick and easy for learning. In real projects, you might want to install Bootstrap using other methods, but you don't need to worry about that at the moment.
 
 ## 🧩 How This Lab Works
 
@@ -81,10 +84,8 @@ As you progress through the exercises, you'll notice three types of learning:
 2. **🔍 Fill-in-the-Blanks**: Strategic gaps marked with `****` for you to figure out
 3. **💡 Pattern Recognition**: Using Bootstrap class patterns you've already learned
 
-> ![NOTE]
 > Some Bootstrap components require JavaScript to function properly, such as the forms we use in this lab. The JavaScript is included for you, and you don't need to worry about it.
 
-> ![NOTE]
 > Each exercise contains important information about the classes you'll need to use. These classes are the foundation of styling with Bootstrap, and it is the purpose of this lab to familiarize you with them.
 
 ### Bootstrap Classes Cheat Sheet
@@ -154,7 +155,7 @@ Keep this handy as you work through the exercises:
 
 **Bootstrap Concepts Introduced In This Exercise**:
 - [Grid](https://getbootstrap.com/docs/5.3/layout/grid/): In this exercise, we only use the grid system (including rows and columns) to help us style the hero section width. We are not actually using its full power yet! In the next exercise we will learn more about the grid system and how to use it to create more complex layouts.
-- [Bootstrap Utilities](https://getbootstrap.com/docs/5.3/layout/utilities/: Bootstrap provides convenient classes to add margin and padding such as `.mb-4`, which stands for "margin-bottom 4", and `py-5`, which stands for "padding in the y dimension 5". It also has useful utilities for applying classes only on certain screen sizes: when we add a breakpoint class like `.flex-sm-row`, this means that on small screens the flex direction will be vertical, but on larger screens this class will be ignored.
+- [Bootstrap Utilities](https://getbootstrap.com/docs/5.3/layout/utilities/): Bootstrap provides convenient classes to add margin and padding such as `.mb-4`, which stands for "margin-bottom 4", and `py-5`, which stands for "padding in the y dimension 5". It also has useful utilities for applying classes only on certain screen sizes: when we add a breakpoint class like `.flex-sm-row`, this means that on small screens the flex direction will be vertical, but on larger screens this class will be ignored.
 - [Button](https://getbootstrap.com/docs/5.3/components/buttons/): Bootstrap's button class can be used on `<button>` elements or on `<a>` elements as we are doing in this exercise.
 
 **Step-by-step instructions:**
@@ -278,6 +279,8 @@ Keep this handy as you work through the exercises:
 
 ### Exercise 5: Forms 📝
 
+> Forms require JavaScript to perform actions when submitted. The submit button has some JavaScript code to pretend to send the message, but you don't need to worry about it for this exercise.
+
 **Goal:** Create a contact form using Bootstrap form components.
 
 **What you're building:** A contact form with name, email, message fields and proper Bootstrap styling.
@@ -358,6 +361,8 @@ Keep this handy as you work through the exercises:
 
 ### Exercise 7: Alerts and Messages 💬
 
+> Alerts require some JavaScript to allow the user to get rid of them. You'll notice in the original HTML that the buttons have an `onclick` attribute which has some JavaScript code. Don't worry about the JavaScript part for now, just focus on the HTML structure and the CSS classes. In the Bootstrap version, you'll notice that we don't have to have an onclick attribute. The JavaScript to handle the alerts is already included in the Bootstrap library, all we have to do is add the `data-bs-dismiss="alert"` button to the correct HTML elements!
+
 **Goal:** Add Bootstrap alerts to provide user feedback and information.
 
 **What you're building:** Different types of alerts for various messages and notifications.
@@ -371,7 +376,7 @@ Keep this handy as you work through the exercises:
 
 1. **Find the Exercise 7 comment**
 
-2. *Replace the plain HTML with the alerts section** found in the exercise 7 comment.
+2. **Replace the plain HTML with the alerts section** found in the exercise 7 comment.
 
 3. **💡 Master Challenge - Fill in the blanks:**
 - **Challenge 1:** `****-primary` - What alert class makes a blue alert? (Follow the color pattern!)
@@ -408,7 +413,7 @@ Keep this handy as you work through the exercises:
 
 2. **Add this footer section:**
 
-**🔍 Final Challenge - Fill in the blanks:**
+3. **🔍 Final Challenge - Fill in the blanks:**
 - **Challenge 1:** `****-dark`, `****-light` - What classes make a dark background with light text?
 - **Challenge 2:** `****-lg-4` - What class makes a column 4 units wide on large screens?
 - **Challenge 3:** `****-light` - What class makes text light colored?
@@ -420,7 +425,7 @@ Keep this handy as you work through the exercises:
 - **Challenge 9:** `****-md-6` - What class makes a column half-width on medium screens?
 - **Challenge 10:** `****-md-end` - What class right-aligns content on medium screens? (Think "text-____")
 
-**Concepts reinforced:**
+**Bootstrap classes explained:**
 - `.bg-dark text-light` - Dark background with light text
 - `.py-5` - Padding top and bottom
 - `.mt-5` - Margin top
@@ -521,15 +526,10 @@ Keep this handy as you work through the exercises:
 By completing this lab, you now understand:
 
 ### 🎯 Bootstrap Patterns
-- **Color System**: `primary` (blue), `success` (green), `warning` (yellow), `danger` (red), `info` (cyan), `secondary` (gray)
 - **Component Variants**: How the same color names work across buttons, alerts, badges, backgrounds, and text
 - **Responsive Grid**: How `col-*` classes create flexible layouts
 - **Utility Classes**: How spacing (`mb-3`), text (`text-center`), and display (`d-flex`) classes work
-
-### 🧠 Problem-Solving Skills
-- **Pattern Recognition**: Identifying how Bootstrap class naming follows consistent patterns
-- **Context Clues**: Using surrounding code to figure out missing pieces
-- **Documentation Reading**: Understanding how to use Bootstrap's systematic approach
+- **Color System**: `primary` (blue), `success` (green), `warning` (yellow), `danger` (red), `info` (cyan), `secondary` (gray)
 
 ### 🛠️ Technical Skills
 - ✅ Include Bootstrap in a project via CDN
@@ -548,6 +548,4 @@ Now that you understand Bootstrap patterns, you can:
 - Try customizing Bootstrap with your own CSS
 - Build your own projects using Bootstrap
 
-**Congratulations on completing the Bootstrap lab!** 🎉
-
-You've not only learned how to use Bootstrap components, but you've also developed the pattern recognition skills that will help you learn any CSS framework quickly and efficiently.
+**Congratulations on completing the Bootstrap Layouts and Components lab!** 🎉

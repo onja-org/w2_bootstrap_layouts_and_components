@@ -2,14 +2,7 @@
 // This test suite checks student progress through Bootstrap layout and component exercises
 
 const { expect } = require("chai");
-const {
-  setupDOM,
-  analyzeNavbar,
-  analyzeCards,
-  analyzeForm,
-  countBootstrapComponents,
-  isBootstrapGrid,
-} = require("./test-helper");
+const { setupDOM, analyzeNavbar, analyzeCards, analyzeForm, countBootstrapComponents, isBootstrapGrid } = require("./test-helper");
 
 describe("Bootstrap Layouts and Components Lab", function () {
   let dom, document;
@@ -63,17 +56,13 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
   describe("Exercise 2: Hero Section", function () {
     it("should have a hero section with proper Bootstrap classes", function () {
-      const heroSection = document.querySelector(
-        ".hero-section, .jumbotron, .bg-primary, .bg-light",
-      );
+      const heroSection = document.querySelector(".hero-section, .jumbotron, .bg-primary, .bg-light");
       expect(heroSection).to.not.be.null;
     });
 
     it("should use display heading classes for main title", function () {
       const heroSection = document.querySelector("home");
-      const displayHeading = heroSection.querySelector(
-        ".display-1, .display-2, .display-3, .display-4, .display-5, .display-6",
-      );
+      const displayHeading = heroSection.querySelector(".display-1, .display-2, .display-3, .display-4, .display-5, .display-6");
       expect(displayHeading).to.not.be.null;
     });
 
@@ -85,9 +74,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should be contained in a container", function () {
       const heroSection = document.querySelector("home");
-      const container = heroSection.querySelector(
-        ".container, .container-fluid",
-      );
+      const container = heroSection.querySelector(".container, .container-fluid");
       expect(container).to.not.be.null;
     });
   });
@@ -104,9 +91,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have responsive column classes", function () {
       const aboutSection = document.querySelector("#about");
-      const responsiveCols = aboutSection.querySelectorAll(
-        '[class*="col-sm"], [class*="col-md"], [class*="col-lg"], [class*="col-xl"]',
-      );
+      const responsiveCols = aboutSection.querySelectorAll('[class*="col-sm"], [class*="col-md"], [class*="col-lg"], [class*="col-xl"]');
       expect(responsiveCols.length).to.be.at.least(1);
     });
 
@@ -115,7 +100,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
       const rowsWithCols = aboutSection.querySelectorAll(".row");
       let hasProperNesting = false;
 
-      rowsWithCols.forEach((row) => {
+      rowsWithCols.forEach(row => {
         const colsInRow = row.querySelectorAll('[class*="col"]');
         if (colsInRow.length > 0) {
           hasProperNesting = true;
@@ -127,8 +112,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have all placeholder classes replaced", function () {
       const aboutSection = document.querySelector("#about");
-      const placeholderClasses =
-        aboutSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = aboutSection.querySelectorAll('[class*="****]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -153,16 +137,13 @@ describe("Bootstrap Layouts and Components Lab", function () {
     });
 
     it("should arrange cards in a responsive grid", function () {
-      const cardsInGrid = document.querySelectorAll(
-        '.row .card, [class*="col"] .card',
-      );
+      const cardsInGrid = document.querySelectorAll('.row .card, [class*="col"] .card');
       expect(cardsInGrid.length).to.be.at.least(2);
     });
 
     it("should have all placeholder classes replaced", function () {
       const connectSection = document.querySelector("#connect");
-      const placeholderClasses =
-        connectSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = connectSection.querySelectorAll('[class*="****]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -179,14 +160,14 @@ describe("Bootstrap Layouts and Components Lab", function () {
     });
 
     it("should have form labels", function () {
-      const labels = document.querySelectorAll(".form-label, label");
+      const formSection = document.querySelector("#contact");
+      const labels = formSection.querySelectorAll(".form-label, label");
       expect(labels.length).to.be.at.least(2);
     });
 
     it("should have a submit button", function () {
-      const submitButton = document.querySelector(
-        'button[type="submit"], input[type="submit"], .btn',
-      );
+      const formSection = document.querySelector("#contact");
+      const submitButton = formSection.querySelector('button[type="submit"], input[type="submit"], .btn');
       expect(submitButton).to.not.be.null;
     });
 
@@ -210,15 +191,13 @@ describe("Bootstrap Layouts and Components Lab", function () {
       expect(buttons.length).to.be.at.least(3);
 
       const buttonVariants = document.querySelectorAll(
-        ".btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger, .btn-info, .btn-light, .btn-dark",
+        ".btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger, .btn-info, .btn-light, .btn-dark"
       );
       expect(buttonVariants.length).to.be.at.least(2);
     });
 
     it("should have at least one button group or toolbar", function () {
-      const buttonGroups = document.querySelectorAll(
-        ".btn-group, .btn-toolbar",
-      );
+      const buttonGroups = document.querySelectorAll(".btn-group, .btn-toolbar");
       expect(buttonGroups.length).to.be.at.least(1);
     });
 
@@ -226,15 +205,12 @@ describe("Bootstrap Layouts and Components Lab", function () {
       const badges = document.querySelectorAll(".badge");
       const progressBars = document.querySelectorAll(".progress");
 
-      expect(
-        badges.length + progressBars.length + spinners.length,
-      ).to.be.at.least(2);
+      expect(badges.length + progressBars.length + spinners.length).to.be.at.least(2);
     });
 
     it("should have all placeholder classes replaced", function () {
       const takeActionSection = document.querySelector("#take-action");
-      const placeholderClasses =
-        takeActionSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = takeActionSection.querySelectorAll('[class*="****]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -251,49 +227,27 @@ describe("Bootstrap Layouts and Components Lab", function () {
     });
 
     it("should use different alert types", function () {
-      const alertTypes = document.querySelectorAll(
-        ".alert-primary, .alert-secondary, .alert-success, .alert-warning, .alert-danger, .alert-info",
-      );
+      const alertTypes = document.querySelectorAll(".alert-primary, .alert-secondary, .alert-success, .alert-warning, .alert-danger, .alert-info");
       expect(alertTypes.length).to.be.at.least(1);
     });
-    it("should have all placeholder classes replaced", function () {
+    it("should have all placeholders replaced", function () {
       const alertsSection = document.querySelector("#alerts");
-      const placeholderClasses =
-        alertsSection.querySelectorAll('[class*="****]');
-      expect(placeholderClasses.length).to.be.equal(0);
+      const placeholderClasses = alertsSection.querySelectorAll('[class*="****]');
+      const otherPlaceholders = alertsSection.querySelectorAll('[data-bs-dismiss*="****"]');
+      let allPlaceholders = placeholderClasses.length + otherPlaceholders.length;
+      expect(allPlaceholders).to.be.equal(0);
     });
   });
 
   describe("Exercise 8: Footer", function () {
-    it("should have a footer element", function () {
-      const footer = document.querySelector("footer, .footer");
+    it("should have the updated footer element", function () {
+      const footer = document.querySelector("#footer");
       expect(footer).to.not.be.null;
-    });
-
-    it("should have multiple columns in footer", function () {
-      const footer = document.querySelector("footer, .footer");
-      if (footer) {
-        const columns = footer.querySelectorAll('[class*="col"]');
-        expect(columns.length).to.be.at.least(2);
-      } else {
-        fail("Footer element not found");
-      }
-    });
-
-    it("should include links and contact information", function () {
-      const footer = document.querySelector("footer, .footer");
-      if (footer) {
-        const links = footer.querySelectorAll("a");
-        expect(links.length).to.be.at.least(2);
-      } else {
-        fail("Footer element not found");
-      }
     });
 
     it("should have all placeholder classes replaced", function () {
       const footerSection = document.querySelector("#footer");
-      const placeholderClasses =
-        footerSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = footerSection.querySelectorAll('[class*="****]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });

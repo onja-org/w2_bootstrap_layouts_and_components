@@ -43,7 +43,6 @@
           </div>
         </nav>
         -->
-
     <div style="display: flex; border-bottom: 1px solid black; padding: 20px">
       <div style="text-align: left; flex-grow: 1">Community Hub</div>
       <div style="display: flex">
@@ -171,7 +170,7 @@
         <div style="display: flex">
           <div>
             <div>
-              <span class="text-white fs-2">❤️</span>
+              <span>❤️</span>
             </div>
             <h4>Kindness First</h4>
             <p>We believe that small acts of kindness create ripple effects that transform communities and change lives for the better.</p>
@@ -463,7 +462,7 @@
           </div>
         </div>
         <br />
-        <button>Send Message</button>
+        <button onclick="alert('Your message has been sent! (Not really)')">Send Message</button>
       </div>
     </section>
 
@@ -498,24 +497,12 @@
                   <button type="button" class="btn ****-primary btn-lg">Join Community</button>
                   <button type="button" class="btn ****-success btn-lg">Start Volunteering</button>
                   <button type="button" class="btn ****-info btn-lg">Learn More</button>
+                  <button type="button" class="btn ****-outline-primary btn-lg">Learn More</button>
+                  <button type="button" class="btn ****-outline-warning btn-lg">Learn More</button>
                 </div>
               </div>
             </div>
 
-            <div class="row g-3 mb-5">
-              <div class="col-md-3">
-                <button class="btn ****-outline-primary w-100">Primary Action</button>
-              </div>
-              <div class="col-md-3">
-                <button class="btn btn-outline-secondary w-100">Secondary</button>
-              </div>
-              <div class="col-md-3">
-                <button class="btn ****-outline-warning w-100">Warning</button>
-              </div>
-              <div class="col-md-3">
-                <button class="btn btn-outline-danger w-100">Important</button>
-              </div>
-            </div>
 
             <div class="row">
               <div class="col-md-6">
@@ -557,6 +544,57 @@
           </div>
         </section>
         -->
+    <section style="text-align: center; margin: 30px 50px">
+      <div>
+        <div>
+          <div>
+            <h2>Take Action Today</h2>
+            <p>Ready to get involved? Choose how you'd like to make a difference.</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div role="group">
+              <button type="button">Join Community</button>
+              <button type="button">Start Volunteering</button>
+              <button type="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; text-align: left; margin-top: 20px">
+          <div style="flex-grow: 1">
+            <h5>Community Goals Progress</h5>
+
+            <div>
+              <div>
+                <label>
+                  New Members This Month
+                  <div><progress value="85" max="100">85%</progress></div>
+                </label>
+              </div>
+              <div>
+                <label>
+                  Volunteer Hours Goal
+                  <div><progress value="92" max="92">92%</progress></div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div style="flex-grow: 1">
+            <h5>Community Stats</h5>
+            <div>
+              <div>1,247 Active Members</div>
+              <div>3,580 Volunteer Hours</div>
+              <div>156 Events This Year</div>
+              <div>89% Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Exercise 7: Alerts and Messages -->
     <!--
@@ -634,6 +672,88 @@
           </div>
         </section>
         -->
+
+    <section style="text-align: center; margin: 30px 50px">
+      <div>
+        <div>
+          <div>
+            <h2>Community Updates</h2>
+            <p>Stay informed with the latest news and important information.</p>
+          </div>
+        </div>
+
+        <div style="text-align: left">
+          <div>
+            <div role="alert" id="alert1" style="display: flex; background-color: lightgray; margin: 30px">
+              <div style="flex-grow: 1">
+                <h4>Welcome to Our Community! 🎉</h4>
+                <p>
+                  Thank you for joining us in building a stronger, more connected community. Your participation makes a real difference in the lives
+                  of others.
+                </p>
+              </div>
+              <div>
+                <button type="button" onclick="let alert = document.querySelector('#alert1'); alert.remove();">X</button>
+              </div>
+            </div>
+
+            <div role="alert" id="alert2" style="display: flex; background-color: lightgray; margin: 30px">
+              <div style="flex-grow: 1">
+                <h4>Community Garden Success! 🌱</h4>
+                <p>
+                  Thanks to our amazing volunteers, we've successfully completed our community garden project. Over 50 families now have access to
+                  fresh, locally-grown produce.
+                </p>
+                <hr />
+                <p>
+                  <strong>Impact:</strong>
+                  500+ pounds of fresh vegetables donated to local food banks.
+                </p>
+              </div>
+              <div>
+                <button type="button" onclick="let alert = document.querySelector('#alert2'); alert.remove();">X</button>
+              </div>
+            </div>
+
+            <div role="alert" id="alert3" style="display: flex; background-color: lightgray; margin: 30px">
+              <div style="flex-grow: 1">
+                <h4>Upcoming Events 📅</h4>
+                <p>Don't miss these exciting community events this month:</p>
+                <ul>
+                  <li>
+                    <strong>March 15:</strong>
+                    Community Cleanup Day - Central Park
+                  </li>
+                  <li>
+                    <strong>March 22:</strong>
+                    Skills Workshop - Digital Literacy
+                  </li>
+                  <li>
+                    <strong>March 29:</strong>
+                    Community Potluck & Celebration
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <button type="button" onclick="let alert = document.querySelector('#alert3'); alert.remove();">X</button>
+              </div>
+            </div>
+
+            <div role="alert" id="alert4" style="background-color: lightyellow; margin: 30px">
+              <div style="flex-grow: 1">
+                <h4>Important Notice ⚠️</h4>
+                <p>
+                  Our community center will be closed for maintenance on March 10-12. All scheduled activities will be moved to alternative locations.
+                  Contact us at
+                  <strong>info@communityhub.org</strong>
+                  for details.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Exercise 8: Footer -->
     <!--
@@ -713,7 +833,7 @@
             <hr class="my-4">
             <div class="row">
               <div class="****-md-6">
-                <p class="mb-0">&copy; 2024 Community Hub. Made with ❤️ for our community.</p>
+                <p class="mb-0">&copy; 2025 Community Hub. Made with ❤️ for our community.</p>
               </div>
               <div class="col-md-6 ****-md-end">
                 <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
@@ -723,10 +843,85 @@
           </div>
         </footer>
         -->
+    <footer style="margin-top: 50px; padding: 30px; background-color: #efefef">
+      <div>
+        <div style="display: flex">
+          <div style="max-width: 50%">
+            <h5>Community Hub</h5>
+            <p>
+              Building bridges of connection, kindness, and support in our evolving world. Together, we create positive change one relationship at a
+              time.
+            </p>
+            <div>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+
+          <div>
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#connect">Get Involved</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h6>Programs</h6>
+            <ul>
+              <li><a href="#">Volunteering</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Learning</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h6>Contact Us</h6>
+            <div>
+              <strong>Address:</strong>
+              <br />
+              123 Community Street
+              <br />
+              Kindness City, KC 12345
+            </div>
+            <div>
+              <strong>Phone:</strong>
+              (555) 123-4567
+            </div>
+            <div>
+              <strong>Email:</strong>
+              hello@communityhub.org
+            </div>
+            <div>
+              <strong>Hours:</strong>
+              <br />
+              Mon-Fri: 9AM-6PM
+              <br />
+              Sat-Sun: 10AM-4PM
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div>
+          <div>
+            <p>&copy; 2025 Community Hub. Made with ❤️ for our community.</p>
+          </div>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
