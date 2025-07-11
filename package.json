@@ -4,7 +4,7 @@
   "description": "A hands-on lab for learning Bootstrap layouts and components",
   "main": "index.html",
   "scripts": {
-    "test": "mocha test/**/*.test.js",
+    "test": "node scripts/test-filter.js",
     "test:watch": "mocha test/**/*.test.js --watch",
     "serve": "npx http-server -p 3000 -o"
   },
