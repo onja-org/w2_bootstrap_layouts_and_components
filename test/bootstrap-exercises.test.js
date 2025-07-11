@@ -46,11 +46,10 @@ describe("Bootstrap Layouts and Components Lab", function () {
       expect(navbarToggler).to.not.be.null;
     });
 
-    it("should have proper navbar structure", function () {
-      const analysis = analyzeNavbar(document);
-      expect(analysis.exists).to.be.true;
-      expect(analysis.brand).to.be.true;
-      expect(analysis.nav).to.be.true;
+    it("should have all placeholder classes replaced", function () {
+      const navSection = document.querySelector("nav");
+      const placeholderClasses = navSection.querySelectorAll('[class*="****]');
+      expect(placeholderClasses.length).to.be.equal(0);
     });
   });
 
@@ -61,21 +60,27 @@ describe("Bootstrap Layouts and Components Lab", function () {
     });
 
     it("should use display heading classes for main title", function () {
-      const heroSection = document.querySelector("home");
+      const heroSection = document.querySelector("#home");
       const displayHeading = heroSection.querySelector(".display-1, .display-2, .display-3, .display-4, .display-5, .display-6");
       expect(displayHeading).to.not.be.null;
     });
 
     it("should have lead text styling", function () {
-      const heroSection = document.querySelector("home");
+      const heroSection = document.querySelector("#home");
       const leadText = heroSection.querySelector(".lead");
       expect(leadText).to.not.be.null;
     });
 
     it("should be contained in a container", function () {
-      const heroSection = document.querySelector("home");
+      const heroSection = document.querySelector("#home");
       const container = heroSection.querySelector(".container, .container-fluid");
       expect(container).to.not.be.null;
+    });
+
+    it("should have all placeholder classes replaced", function () {
+      const heroSection = document.querySelector("#home");
+      const placeholderClasses = heroSection.querySelectorAll('[class*="****]');
+      expect(placeholderClasses.length).to.be.equal(0);
     });
   });
 

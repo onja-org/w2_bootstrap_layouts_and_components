@@ -80,13 +80,13 @@ This direct linking method is quick and easy for learning. In real projects, you
 
 As you progress through the exercises, you'll notice three types of learning:
 
-1. **🎯 Guided Code**: Complete code examples to learn new concepts
-2. **🔍 Fill-in-the-Blanks**: Strategic gaps marked with `****` for you to figure out
+1. **🎯 Guided Code**: Read through the provided Bootstrap code snippets in the comments for each exercise, and then copy it to replace the plain HTML
+2. **🔍 Fill-in-the-Blanks**: Strategic gaps in the provided code marked with `****` for you to figure out
 3. **💡 Pattern Recognition**: Using Bootstrap class patterns you've already learned
 
-> Some Bootstrap components require JavaScript to function properly, such as the forms we use in this lab. The JavaScript is included for you, and you don't need to worry about it.
+> Make sure that you are reading through the code in the `index.html` exercise comments as you are completing the exercises. Reading through the Bootstrap HTML is how you will learn the patterns and how to use the classes. Just pasting it without reading it will not help you learn!
 
-> Each exercise contains important information about the classes you'll need to use. These classes are the foundation of styling with Bootstrap, and it is the purpose of this lab to familiarize you with them.
+> Each exercise in the readme contains information about the Bootstrap classes being used. These classes are the foundation of styling with Bootstrap, and it is the purpose of this lab to familiarize you with them.
 
 ### Bootstrap Classes Cheat Sheet
 
@@ -121,7 +121,7 @@ Keep this handy as you work through the exercises:
 **Bootstrap Concepts Introduced In This Exercise**:
 - [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/): Bootstrap's navigation bar component. It is the container which holds the brand, navigation links, and other elements which generally appears at the top of the page. Items such as the navbar-brand (which is used to display the brand/logo), and navbar-nav (which is used to display the navigation links) go inside of the navbar component. The navbar can be made to collapse into a hamburger menu by adding the `navbar-expand-lg` class, which requires the use of the `Collapse` component, explained below.
 - [Collapse](https://getbootstrap.com/docs/5.3/components/collapse/): Bootstrap's Collapse component is used to show and hide any content. Here, we will use it to collapse the navigation links into a hamburger menu on smaller screens.
-- [Container](https://getbootstrap.com/docs/5.3/layout/containers/): Bootstrap's container component is used to wrap content and provide padding. It is used to center the content on the page and provide a maximum width.
+- [Container](https://getbootstrap.com/docs/5.3/layout/containers/): Bootstrap's container component is used to wrap content and provide padding.
 
 **Step-by-step instructions:**
 
@@ -129,7 +129,10 @@ Keep this handy as you work through the exercises:
 
 2. **Replace the TODO comment** with provided navbar structure.
 
-3. **Test your work:** Run `npm test` - the first 5 tests should now pass! Try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to test your navbar's responsiveness. Shrink the size of the screen and watch the hamburger menu appear.
+3. **🔍 Fill in the blanks:**
+- **Hint 1:** `nav-****` - What class marks a navigation item? (Think "nav-____")
+
+4. **Test your work:** Run `npm test` - the first 5 tests should now pass! Try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to test your navbar's responsiveness. Shrink the size of the screen and watch the hamburger menu appear.
 
 **Bootstrap classes explained:**
 - `.navbar` - Base navbar component
@@ -163,6 +166,9 @@ Keep this handy as you work through the exercises:
 1. **Find the existing hero section**
 
 2. **Replace the entire hero section** with the code provided in the comment.
+
+3. **🔍 Fill in the blanks:**
+- **Hint 1:** `justify-content-****` - What class centers flex items? (It is used earlier in the hero section on the row)
 
 3. **Test your work:** Run `npm test` - Make sure the Hero Section tests are passing. Notice how if you make the screen smaller, the buttons will stack vertically.
 
@@ -214,6 +220,8 @@ Keep this handy as you work through the exercises:
 - **Hint 5:** `****-white` - What class makes text white? (Used in Exercise 2)
 - **Hint 6:** `****-bold` - What class makes text bold? (Used in Exercise 2)
 
+4. **Test your work:** Run `npm test` - The Main Content Grid tests should now pass!
+
 
 **Bootstrap classes explained:**
 - `.py-5` - Padding top and bottom
@@ -257,6 +265,7 @@ Keep this handy as you work through the exercises:
 - **Hint 5:** `****-success` - What button class makes a green button? (Follow the color pattern)
 - **Hint 6:** `****-secondary` - What badge class makes a gray badge? (Same pattern as backgrounds)
 
+4. **Test your work:** Run `npm test` - The Cards Section tests should now pass!
 
 **Bootstrap classes explained:**
 - `.bg-light` - Light gray background
@@ -309,6 +318,8 @@ Keep this handy as you work through the exercises:
 - **Hint 6:** `****-check-input` - What class styles checkbox inputs? (Follow the pattern)
 - **Hint 7:** `****-primary` - What button class makes a blue button? (You used this in Exercise 4)
 
+4. **Test your work:** Run `npm test` - The Forms Section tests should now pass!
+
 **Bootstrap classes explained:**
 - `.form-label` - Styles form labels
 - `.form-control` - Styles input fields and textareas
@@ -344,6 +355,8 @@ Keep this handy as you work through the exercises:
 - **Challenge 5:** `****` - What class creates the progress bar container?
 - **Challenge 6:** `****-success` - What class makes a green progress bar?
 - **Challenge 7:** `****-bg-primary`, `****-success`, `****-info` - What's the pattern for badge backgrounds?
+
+4. **Test your work:** Run `npm test` - The Buttons and Components tests should now pass!
 
 **Bootstrap classes explained:**
 - `.btn-group` - Groups buttons together
@@ -387,6 +400,8 @@ Keep this handy as you work through the exercises:
 - **Challenge 6:** `data-bs-dismiss="****"` - What word goes here to dismiss alerts?
 - **Challenge 7:** `****-warning` - What alert class makes a yellow alert? (You know this pattern!)
 
+4. **Test your work:** Run `npm test` - The Alerts and Messages tests should now pass!
+
 **Bootstrap classes explained:**
 - `.alert` - Base alert component
 - `.alert-primary`, `.alert-success`, `.alert-info`, `.alert-warning` - Alert color variants
@@ -425,6 +440,8 @@ Keep this handy as you work through the exercises:
 - **Challenge 9:** `****-md-6` - What class makes a column half-width on medium screens?
 - **Challenge 10:** `****-md-end` - What class right-aligns content on medium screens? (Think "text-____")
 
+4. **Test your work:** Run `npm test` - All of the tests should now be passing!
+
 **Bootstrap classes explained:**
 - `.bg-dark text-light` - Dark background with light text
 - `.py-5` - Padding top and bottom
@@ -441,6 +458,18 @@ Keep this handy as you work through the exercises:
 ## 🔍 Answer Key for Discovery Challenges
 
 **Stuck on the fill-in-the-blanks?** Here are the answers:
+
+<details>
+    <summary>Exercise 1 Answers (Click to reveal)</summary>
+
+- `nav-item` (navigation item)
+</details
+
+<details>
+    <summary>Exercise 2 Answers (Click to reveal)</summary>
+
+- `justify-content-center` (centers content)
+</details
 
 <details>
 <summary>Exercise 3 Answers (Click to reveal)</summary>
