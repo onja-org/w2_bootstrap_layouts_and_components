@@ -7,6 +7,35 @@ document.addEventListener("DOMContentLoaded", function () {
   addEventListeners();
 });
 
+function showAlert(message, type = "info") {
+  // Remove any existing alerts
+  const existingAlerts = document.querySelectorAll(".dynamic-alert");
+  existingAlerts.forEach(alert => alert.remove());
+
+  // Create new alert
+  const alertDiv = document.createElement("div");
+  alertDiv.className = `alert alert-${type} alert-dismissible fade show dynamic-alert`;
+  alertDiv.style.position = "fixed";
+  alertDiv.style.top = "20px";
+  alertDiv.style.right = "20px";
+  alertDiv.style.zIndex = "9999";
+  alertDiv.style.minWidth = "300px";
+
+  alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+
+  document.body.appendChild(alertDiv);
+
+  // Auto-dismiss after 5 seconds
+  setTimeout(() => {
+    if (alertDiv.parentNode) {
+      alertDiv.remove();
+    }
+  }, 5000);
+}
+
 /**
  * Add event listeners for interactive elements
  */

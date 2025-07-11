@@ -62,7 +62,7 @@ npm run test:watch
 ## 📚 Understanding Bootstrap Integration
 
 Including Bootstrap in your project is easy!
-Bootstrap is included by adding a `link` and a `script` tag so that the library is downloaded and included in your website. Look at the `<head>` section of `index.html`:
+Bootstrap is included by adding a `link` and a `script` tag so that the library is downloaded and included in your website. Look at the `<head>` section of `index.html` -- you will find the stylesheet link, and at the very bottom of the body section you will find the script tag:
 
 ```html
 <!-- Bootstrap CSS -->
@@ -78,11 +78,10 @@ This direct linking method is quick and easy for learning. In real projects, you
 
 ## 🧩 How This Lab Works
 
-As you progress through the exercises, you'll notice three types of learning:
+As you progress through the exercises, you'll notice two types of learning:
 
-1. **🎯 Guided Code**: Read through the provided Bootstrap code snippets in the comments for each exercise, and then copy it to replace the plain HTML
-2. **🔍 Fill-in-the-Blanks**: Strategic gaps in the provided code marked with `****` for you to figure out
-3. **💡 Pattern Recognition**: Using Bootstrap class patterns you've already learned
+1. **🎯 Guided Code**: Read through the provided Bootstrap code snippets in the comments for each exercise, and then copy it to replace the plain HTML section. Make sure to copy the entire Bootstrap snippet in the comment and to replace the entire existing section under the comment.
+2. **🔍 Fill-in-the-Blanks**: Strategic gaps in the provided code marked with `****` for you to fill in with the correct class. Make sure to save the file after your changes and see the difference in the browser!
 
 > Make sure that you are reading through the code in the `index.html` exercise comments as you are completing the exercises. Reading through the Bootstrap HTML is how you will learn the patterns and how to use the classes. Just pasting it without reading it will not help you learn!
 
@@ -119,20 +118,20 @@ Keep this handy as you work through the exercises:
 **What you're building:** A dark navigation bar with the brand "Community Hub" on the left and navigation links on the right. On mobile devices, the links will collapse into a hamburger menu.
 
 **Bootstrap Concepts Introduced In This Exercise**:
-- [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/): Bootstrap's navigation bar component. It is the container which holds the brand, navigation links, and other elements which generally appears at the top of the page. Items such as the navbar-brand (which is used to display the brand/logo), and navbar-nav (which is used to display the navigation links) go inside of the navbar component. The navbar can be made to collapse into a hamburger menu by adding the `navbar-expand-lg` class, which requires the use of the `Collapse` component, explained below.
-- [Collapse](https://getbootstrap.com/docs/5.3/components/collapse/): Bootstrap's Collapse component is used to show and hide any content. Here, we will use it to collapse the navigation links into a hamburger menu on smaller screens.
+- [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/): Bootstrap's navigation bar component. It is the container which holds the brand, navigation links, and other elements which generally appears at the top of the page. Items such as the navbar-brand (which is used to display the brand/logo), and navbar-nav (which is used to display the navigation links) go inside of the navbar component. By default the navbar is a hamburger menu, but when we add the `.navbar-expand-lg` class, it will expand to a full-width navigation bar on larger screens.
+- [Collapse](https://getbootstrap.com/docs/5.3/components/collapse/): Bootstrap's Collapse component is used to show and hide any content. Here, we will use it to hide the navigation links until the user clicks on the hamburger menu button. This is accomplished using the `data-bs-target` attribute, which points to the ID of the collapsible content. Bootstrap handles this behavior automatically.
 - [Container](https://getbootstrap.com/docs/5.3/layout/containers/): Bootstrap's container component is used to wrap content and provide padding.
 
 **Step-by-step instructions:**
 
 1. **Find the Exercise 1 comment** in `index.html` (around line 17)
 
-2. **Replace the TODO comment** with provided navbar structure.
+2. **Replace the existing section** with provided navbar structure.
 
 3. **🔍 Fill in the blanks:**
 - **Hint 1:** `nav-****` - What class marks a navigation item? (Think "nav-____")
 
-4. **Test your work:** Run `npm test` - the first 5 tests should now pass! Try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to test your navbar's responsiveness. Shrink the size of the screen and watch the hamburger menu appear.
+4. **Test your work:** Run `npm test` - the first section of tests should now pass! Go to your site in the browser and try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to test your navbar's responsiveness. Shrink the size of the screen and watch the hamburger menu appear.
 
 **Bootstrap classes explained:**
 - `.navbar` - Base navbar component
@@ -163,7 +162,7 @@ Keep this handy as you work through the exercises:
 
 **Step-by-step instructions:**
 
-1. **Find the existing hero section**
+1. **Find the exercise 2 comment**
 
 2. **Replace the entire hero section** with the code provided in the comment.
 
@@ -214,7 +213,7 @@ Keep this handy as you work through the exercises:
 
 3. **🔍 Fill in the blanks:**
 - **Hint 1:** `****-muted` - What class makes text gray? (Used in Exercise 2)
-- **Hint 2:** `****-md-4` - What class makes a column take 1/3 width on medium screens? (Look at the complete example)
+- **Hint 2:** `****-md-4` - What class makes a *column* take 1/3 width on medium screens?
 - **Hint 3:** `****-primary` - What class gives a blue background? (Used in Exercise 2)
 - **Hint 4:** `****-success` - What class gives a green background? (Check the cheat sheet)
 - **Hint 5:** `****-white` - What class makes text white? (Used in Exercise 2)
@@ -247,7 +246,7 @@ Keep this handy as you work through the exercises:
 
 **Bootstrap Concepts Introduced in This Exercise**:
 - [Cards](https://getbootstrap.com/docs/5.3/components/card/): Bootstrap's cards are helpful for displaying a series of items in a consistent way.
-- [Badges](https://getbootstrap.com/docs/5.3/components/badge/): Styles badges with different colors.
+- [Badges](https://getbootstrap.com/docs/5.3/components/badge/): Creates small status indicators that can be used inside cards or other components. They can be used to show status, counts, or other supplementary information -- usually as a small label next to a title or text.
 
 **🔍 Discovery Challenge:** You'll use the color patterns you've learned to style the card headers and buttons!
 
@@ -255,11 +254,11 @@ Keep this handy as you work through the exercises:
 
 1. **Find the Exercise 4 comment**
 
-2. **Add the cards section** found in the comment.
+2. **Replace the existing section** with the Bootstrap version found in the exercise comment.
 
 3. **🔍 Fill in the blanks:**
 - **Hint 1:** `****-primary` - What class gives a blue background? (You used this in Exercise 3)
-- **Hint 2:** `****-secondary` - What class gives a gray background? (Check the complete example)
+- **Hint 2:** `****-secondary` - What class gives a gray background?
 - **Hint 3:** `****-primary` - What button class makes a blue button? (Look at the pattern)
 - **Hint 4:** `****-white` - What class makes text white? (You used this multiple times)
 - **Hint 5:** `****-success` - What button class makes a green button? (Follow the color pattern)
@@ -339,13 +338,13 @@ Keep this handy as you work through the exercises:
 **💡 Pattern Recognition Challenge:** Now you'll use the color patterns you've mastered to style buttons and components!
 
 **Bootstrap Concepts Introduced In This Exercise**:
-- [Progress Bars](https://getbootstrap.com/docs/5.3/components/progress/): Styles the colored part of a progress bar.
+- [Progress Bars](https://getbootstrap.com/docs/5.3/components/progress/): Progress bars visually indicate the progress of a task. They can be styled with different colors and sizes.
 
 **Step-by-step instructions:**
 
 1. **Find the Exercise 6 comment**
 
-2. *Replace the plain HTML with the take-action section** found in the exercise 6 comment.
+2. **Replace the plain HTML with the take-action section** found in the exercise 6 comment.
 
 3. **💡 Pattern Recognition Challenge - Fill in the blanks:**
 - **Challenge 1:** `****-primary`, `****-success`, `****-info` - What's the pattern for button colors?
@@ -354,7 +353,8 @@ Keep this handy as you work through the exercises:
 - **Challenge 4:** `****-bar` - What class creates the colored part of a progress bar?
 - **Challenge 5:** `****` - What class creates the progress bar container?
 - **Challenge 6:** `****-success` - What class makes a green progress bar?
-- **Challenge 7:** `****-bg-primary`, `****-success`, `****-info` - What's the pattern for badge backgrounds?
+- **Challenge 7:** `****` - How do you specify that a div is a badge?
+- **Challenge 8:** `****-success`, `****-info` - What's the pattern for badge backgrounds?
 
 4. **Test your work:** Run `npm test` - The Buttons and Components tests should now pass!
 
@@ -383,7 +383,7 @@ Keep this handy as you work through the exercises:
 **💡 Master Challenge:** You've learned all the color patterns - now apply them to alerts!
 
 **Bootstrap Concepts Introduced In This Exercise**:
-- [Alerts](https://getbootstrap.com/docs/5.3/components/alerts/): Bootstrap alerts create a colored background for messages. They can also provide a close button and be dismissible.
+- [Alerts](https://getbootstrap.com/docs/5.3/components/alerts/): Bootstrap alerts create a colored background for messages. They can also be made dismissable by adding a close button.
 
 **Step-by-step instructions:**
 
@@ -454,6 +454,11 @@ Keep this handy as you work through the exercises:
 - `.me-3` - Margin end (right spacing)
 
 ---
+## 🏁 Congratulations!
+
+You've completed the Bootstrap Layouts and Components lab! 🎉
+
+Check out your fully responsive website in the browser. Play around with different screen sizes to see how the layout adapts. Pretty nifty.
 
 ## 🔍 Answer Key for Discovery Challenges
 
@@ -463,13 +468,13 @@ Keep this handy as you work through the exercises:
     <summary>Exercise 1 Answers (Click to reveal)</summary>
 
 - `nav-item` (navigation item)
-</details
+</details>
 
 <details>
     <summary>Exercise 2 Answers (Click to reveal)</summary>
 
 - `justify-content-center` (centers content)
-</details
+</details>
 
 <details>
 <summary>Exercise 3 Answers (Click to reveal)</summary>
@@ -517,7 +522,8 @@ Keep this handy as you work through the exercises:
 - `progress-bar` (progress bar element)
 - `progress` (progress container)
 - `bg-success` (green progress bar)
-- `badge bg-primary`, `bg-success`, `bg-info` (badge backgrounds)
+- `badge` (badge class)
+- `bg-success`, `bg-info` (badge backgrounds)
 
 </details>
 

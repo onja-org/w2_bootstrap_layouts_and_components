@@ -48,7 +48,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have all placeholder classes replaced", function () {
       const navSection = document.querySelector("nav");
-      const placeholderClasses = navSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = navSection.querySelectorAll('[class*="****"]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -79,7 +79,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have all placeholder classes replaced", function () {
       const heroSection = document.querySelector("#home");
-      const placeholderClasses = heroSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = heroSection.querySelectorAll('[class*="****"]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -117,7 +117,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have all placeholder classes replaced", function () {
       const aboutSection = document.querySelector("#about");
-      const placeholderClasses = aboutSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = aboutSection.querySelectorAll('[class*="****"]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -148,7 +148,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have all placeholder classes replaced", function () {
       const connectSection = document.querySelector("#connect");
-      const placeholderClasses = connectSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = connectSection.querySelectorAll('[class*="****"]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -185,17 +185,18 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have all placeholder classes replaced", function () {
       const formSection = document.querySelector("#contact");
-      const placeholderClasses = formSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = formSection.querySelectorAll('[class*="****"]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
 
   describe("Exercise 6: Buttons and Components", function () {
     it("should have multiple Bootstrap buttons with different styles", function () {
-      const buttons = document.querySelectorAll(".btn");
+      const takeActionSection = document.querySelector("#take-action");
+      const buttons = takeActionSection.querySelectorAll(".btn");
       expect(buttons.length).to.be.at.least(3);
 
-      const buttonVariants = document.querySelectorAll(
+      const buttonVariants = takeActionSection.querySelectorAll(
         ".btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger, .btn-info, .btn-light, .btn-dark"
       );
       expect(buttonVariants.length).to.be.at.least(2);
@@ -210,12 +211,12 @@ describe("Bootstrap Layouts and Components Lab", function () {
       const badges = document.querySelectorAll(".badge");
       const progressBars = document.querySelectorAll(".progress");
 
-      expect(badges.length + progressBars.length + spinners.length).to.be.at.least(2);
+      expect(badges.length + progressBars.length).to.be.at.least(2);
     });
 
     it("should have all placeholder classes replaced", function () {
       const takeActionSection = document.querySelector("#take-action");
-      const placeholderClasses = takeActionSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = takeActionSection.querySelectorAll('[class*="****"]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
@@ -237,7 +238,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
     });
     it("should have all placeholders replaced", function () {
       const alertsSection = document.querySelector("#alerts");
-      const placeholderClasses = alertsSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = alertsSection.querySelectorAll('[class*="****"]');
       const otherPlaceholders = alertsSection.querySelectorAll('[data-bs-dismiss*="****"]');
       let allPlaceholders = placeholderClasses.length + otherPlaceholders.length;
       expect(allPlaceholders).to.be.equal(0);
@@ -252,7 +253,7 @@ describe("Bootstrap Layouts and Components Lab", function () {
 
     it("should have all placeholder classes replaced", function () {
       const footerSection = document.querySelector("#footer");
-      const placeholderClasses = footerSection.querySelectorAll('[class*="****]');
+      const placeholderClasses = footerSection.querySelectorAll('[class*="****"]');
       expect(placeholderClasses.length).to.be.equal(0);
     });
   });
