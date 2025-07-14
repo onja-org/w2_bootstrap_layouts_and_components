@@ -28,7 +28,7 @@ By completing this lab, you will:
 ### Setup
 1. Clone or download this repository
     ```bash
-    git clone [TODO: REPLACE WITH ACTUAL REPOSITORY URL ONCE IT IS HOSTED IN THE ONJA ORGANIZATION]
+    git clone https://github.com/onja-org/w2_bootstrap_layouts_and_components
     ```
 2. Navigate to the project directory
     ```bash
@@ -44,7 +44,9 @@ By completing this lab, you will:
     ```
 5. Open your browser to `http://localhost:3000`
 
-You now have the basic website up and running. Check out the website in your browser -- it is pretty boring at the moment! We will see it transform as you complete the exercises.
+You now have the basic website up and running. Check out the website in your browser -- it is pretty boring at the moment! We will see it transform to look like the screenshot below as you complete the exercises. Don't forget to save your changes in the `index.html` file and refresh the browser as you make changes!
+
+<img src="assets/example_screenshot.png" alt="Preview of Bootstrap-Styled Website" title="Preview of Bootstrap-Styled Website" width="600">
 
 ### Running Tests
 To check your progress and ensure you're completing exercises correctly:

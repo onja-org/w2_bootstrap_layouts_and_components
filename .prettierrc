@@ -9,6 +9,5 @@
   "bracketSpacing": true,
   "bracketSameLine": true,
   "arrowParens": "avoid",
-  "htmlWhitespaceSensitivity": "ignore",
   "endOfLine": "lf"
 }
