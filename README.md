@@ -131,7 +131,7 @@ Keep this handy as you work through the exercises:
 2. **Replace the existing section** with provided navbar structure.
 
 3. **🔍 Fill in the blanks:**
-- **Hint 1:** `nav-****` - What class marks a navigation item? (Think "nav-____")
+- **Hint 1:** `nav-****` - What class marks a navigation item?
 
 4. **Test your work:** Run `npm test` - the first section of tests should now pass! Go to your site in the browser and try opening the developer tools (press F12) and using the "Responsive Design Mode" (ctrl+shift+m when the developer tools are open) to test your navbar's responsiveness. Shrink the size of the screen and watch the hamburger menu appear.
 
