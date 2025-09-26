@@ -4,9 +4,9 @@
   "description": "A hands-on lab for learning Bootstrap layouts and components",
   "main": "index.html",
   "scripts": {
-    "test": "node scripts/test-filter.js",
-    "test:watch": "mocha test/**/*.test.js --watch",
-    "serve": "npx http-server -p 3000 -o"
+    "test": "node lab/scripts/test-filter.js",
+    "test:watch": "mocha lab/test/**/*.test.js --watch",
+    "serve": "npx http-server lab -p 3000 -o"
   },
   "keywords": [
     "bootstrap",

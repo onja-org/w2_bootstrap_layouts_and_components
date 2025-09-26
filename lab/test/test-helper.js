@@ -8,7 +8,7 @@ const { JSDOM } = require('jsdom');
  * @param {string} htmlFile - Path to the HTML file to load
  * @returns {Object} DOM window and document objects
  */
-function setupDOM(htmlFile = '../index.html') {
+function setupDOM(htmlFile = './lab/index.html') {
     const htmlPath = path.join(__dirname, htmlFile);
     const htmlContent = fs.readFileSync(htmlPath, 'utf8');
 

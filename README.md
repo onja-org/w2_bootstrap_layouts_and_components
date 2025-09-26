@@ -14,25 +14,28 @@ Transform an unstyled HTML website into a fully responsive, professional web app
 ## Lab Structure
 
 ```
-lab/
-├── index.html          # Main HTML file with exercise comments and plain HTML to transform
-├── README.md           # Detailed step-by-step instructions and Bootstrap concepts
 ├── package.json        # Dependencies and npm scripts
-├── js/
-│   └── main.js         # Basic JavaScript functionality
-├── scripts/
-│   └── test-filter.js  # Custom test runner
-└── test/
-    ├── bootstrap-exercises.test.js  # Automated tests for each exercise
-    └── test-helper.js              # Test utilities
+├── .gitignore         # Git ignore file
+├── README.md          # This overview file
+├── assets/
+│   └── example_screenshot.png  # Expected result screenshot
+└── lab/
+    ├── index.html          # Main HTML file with exercise comments and plain HTML to transform
+    ├── README.md           # Detailed step-by-step instructions and Bootstrap concepts
+    ├── js/
+    │   └── main.js         # Basic JavaScript functionality
+    ├── scripts/
+    │   └── test-filter.js  # Custom test runner
+    └── test/
+        ├── bootstrap-exercises.test.js  # Automated tests for each exercise
+        └── test-helper.js              # Test utilities
 ```
 
 ## Quick Start
 
 ```bash
 git clone https://github.com/onja-org/w2_bootstrap_layouts_and_components
-cd w2_bootstrap_layouts_and_components/lab
-cd lab
+cd w2_bootstrap_layouts_and_components
 npm install
 npm run serve
 npm test

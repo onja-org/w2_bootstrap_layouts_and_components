@@ -8,7 +8,7 @@ const { spawn } = require("child_process");
 const process = require("process");
 
 // Spawn mocha with color output
-const mocha = spawn("npx", ["mocha", "test/**/*.test.js", "--color"], {
+const mocha = spawn("npx", ["mocha", "lab/test/**/*.test.js", "--color"], {
   stdio: ["inherit", "pipe", "pipe"],
 });
 
